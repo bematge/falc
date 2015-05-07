@@ -1,0 +1,54 @@
+/* colorier les blocs principaux*/
+
+header {
+	background: rgba(0, 0, 255, 0.3);
+}
+
+main {
+	background: rgba(0, 255, 0, 0.3);
+}
+
+nav {
+	background: rgba(255, 0, 0, 0.3);
+}
+
+footer {
+	background: rgba(0, 0, 255, 0.3);
+}
+/* structurer un peu les titres en leur donnant une importance typographique croissante*/
+
+h1 {
+	font-size: 30px;
+	color: #F00
+}
+
+h2 {
+	font-size: 24px:
+}
+
+h3 {
+	font-size: 18px;
+}
+/* positionner les blocs nav et main */
+
+nav {
+	display: block;
+	width: 30%;
+	float: left
+}
+
+main {
+	width: 70%;
+	float: right
+}
+
+#outils {
+	position: absolute;
+	top: 0;
+	right: 0
+}
+/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+
+footer {
+	clear: both
+}
