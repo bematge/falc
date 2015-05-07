@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../css/dev.css" rel='stylesheet' type='text/css' media="all">
+    <title>Le cresson</title>
+    <script type="text/javascript">
+        function changeCSS(cssFile, cssLinkIndex) {
+
+            var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
+
+            var newlink = document.createElement("link");
+            newlink.setAttribute("rel", "stylesheet");
+            newlink.setAttribute("type", "text/css");
+            newlink.setAttribute("href", cssFile);
+
+            document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+        }
+    </script>
+
+</head>
+
+<body>
+    <p>
+        <a href="#" onclick="changeCSS('../css/dev.css', 0);">style defaut</a>
+        <a href="#" onclick="changeCSS('../css/dev-noimages.css', 0);">sans images</a>
+    </p>
+    <article id="a1_1" class="article">
+        <h3>Le cresson</h3>
+        <dl>
+            <dt>le cresson</dt>
+            <dd>est un légume feuille qui parfume les salades et les soupes.</dd>
+            <img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=cresson">
+        </dl>
+        <h4>Cresson et Vanille</h4>
+
+        <p>Candyce Gesnouin est une élève au lycée hôtelier Château des Coudraies à Etiolles (91)<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=apprenti">
+        </p>
+        <p>Elle a préparé un pavé de cabillaud en croûte nappé de coulis de cresson avec un risotto à la vanille.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=assiete">
+        </p>
+        <p>Vous pouvez retrouver la recette sur : <a href="www.iledefrance.fr">www.iledefrance.fr</a>
+            <img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=www">
+        </p>
+
+        <h4>Méréville est la capitale du cresson</h4>
+        <p>Vous pouvez trouver du cresson à Méréville en Essonne.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=91">
+        </p>
+        <p>La ville organise une foire avec des dégustations de :
+            <ul>
+                <li>Soupes au cresson<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=soupe">
+                </li>
+                <li>Vins au cresson<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=vin">
+                </li>
+                <li>Huiles au cresson<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=huile">
+                </li>
+            </ul>
+        </p>
+        <p>Il y a 30 agriculteurs qui cultivent le cresson en Essonne.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=agiculteur">
+        </p>
+        <h4>Profession cressiculteur</h4>
+        <p>Le cressicuteur est un agriculteur qui cultive le cresson.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=agiculteur"> </p>
+        <p>Serge Barberon est installé à Méréville.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=plan"> </p>
+        <p>Serge Barberon a choisi la culture biologique depuis 16 ans.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=portrait"> </p>
+        <p>Serge Barberon produit 70000 bottes de cresson pas an.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=chiffre"> </p>
+        <p>Un laboratoire va bientôt ouvrir pour produire ses soupes et ses purées.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Adresse:
+            <br/> Serge Barberon
+            <br/> 23 rue du Tour-de-Ville
+            <br/> 91160 Méréville<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=adresse"> </p>
+
+        <h4>Le cresson depuis 1856</h4>
+        <p>Le cresson est arrivé en Ile-de-France en 1856.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Le cresson a plein de qualités.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Le cresson est bon pour la santé.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Au Moyen-Age le cresson est utilisé comme médicament.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>La France produit du cresson à partir du 19ème siècle.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Il y a des fosses à cresson dans toute la région parisienne.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>La récolte est toujours la même:
+            <ol>
+                <li>On sème en juillet<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </li>
+                <li>On coupe 5 à 6 semaines après<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </li>
+                <li>On recoupe tous les 25 jours jusqu’à la fin du mois de juin.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </li>
+            </ol>
+        </p>
+        <p>Serge Barberon explique que c’est un métier difficile.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Le cresson est vendu sur les marchés toute l’année.<img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo"> </p>
+        <p>Plus d’infos sur <a href="www.saveurparisidf.com">www.saveurparisidf.com</a><img alt="" src="http://dummyimage.com/60x60/000/ffffff.png&text=labo">
+        </p>
+
+
+    </article>
+</body>
+
+</html>
