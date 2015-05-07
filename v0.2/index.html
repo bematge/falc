@@ -8,14 +8,11 @@
 	<title>Région Île de France, Le magazine facile à lire et à comprendre. Numéro 00</title>
 	<script type="text/javascript">
 		function changeCSS(cssFile, cssLinkIndex) {
-
 			var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-
 			var newlink = document.createElement("link");
 			newlink.setAttribute("rel", "stylesheet");
 			newlink.setAttribute("type", "text/css");
 			newlink.setAttribute("href", cssFile);
-
 			document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
 			window.reload;
 		}
@@ -50,7 +47,7 @@
 	<nav id="sommaire" role=“navigation”>
 		<ol>
 			<li>
-				<a href="index.html"></a>Retour à l'accueil</a>
+				<a href="#couverture">Retour à l'accueil</a>
 			</li>
 			<li>
 				<p>Rubrique 01</p>
