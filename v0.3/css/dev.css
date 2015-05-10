@@ -1,45 +1,53 @@
 @import url('reset.css');
-/* grands articles */
+/* OBLIGATOIRE POUR FONCTIONNEMENT JAVASCRIPT */
+
+#sommaire ol .active {
+	/* lien de menu entouré quand article à l'écran */
+	
+	display: block;
+	border: 2px solid #f00;
+}
+
+footer {
+	/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+	
+	clear: both
+}
+/* Barre d'outils et d'accès */
+
+.outil {
+	display: inline-block;
+	width: 49%;
+}
+
+.outil select {
+	width: 5em;
+}
+/* organiser le header */
 
 #sommaire ol li a:hover {
 	color: #f00;
 }
 
-.active {
-	display: block;
-	border: 2px solid #f00;
-}
-/* -- */
-/* -- */
-
 header {
-	background: rgba(0, 0, 255, 0.3);
+	display: relative;
 }
 
-main {
-	background: rgba(0, 255, 0, 0.3);
+header .logo,
+header .titre {
+	vertical-align: top;
+	display: inline-block;
 }
 
-nav {
-	background: rgba(255, 0, 0, 0.3);
+header img {
+	max-width: 15%;
+	border: 1px solid red
 }
 
-footer {
-	background: rgba(0, 0, 255, 0.3);
-}
-/* structurer un peu les titres en leur donnant une importance typographique croissante*/
-
-h1 {
-	font-size: 30px;
+header h1 {
+	border: 1px solid black;
+	max-width: 60%;
 	color: #F00
-}
-
-h2 {
-	font-size: 24px:
-}
-
-h3 {
-	font-size: 18px;
 }
 /* menu flottant*/
 
@@ -54,12 +62,13 @@ h3 {
 
 nav {
 	display: block;
-	width: 30%;
+	width: 20%;
 	float: left
 }
 
 main {
-	width: 70%;
+	display: block;
+	width: 80%;
 	float: right
 }
 
@@ -73,16 +82,94 @@ li {
 	top: 0;
 	right: 0
 }
-/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+/* au dessus de chaque article, navigation rapide */
 
-footer {
-	clear: both
+.next-top {
+	display: block;
+	width: 30%;
+	float: right;
+	background: rgba(80, 80, 80, 0.3);
 }
 
-h4 {
-	display: block;
-	background: #C4C4C4;
-	line-height: 60px;
+.next {
+	width: 50%;
+	margin: 5em auto 5em auto;
+	vertical-align: middle
+}
+
+.top {
+	width: 50%;
+	margin: 5em auto 5em auto;
+	text-align: center
+}
+
+@media screen and ( min-width: 640px) {
+	.next-top {
+		display: block;
+		width: 100%;
+		background: rgba(80, 80, 80, 0.3);
+	}
+	.next {
+		width: 100%;
+		margin: 0;
+		text-align: left
+	}
+	.top {
+		width: 100%;
+		margin: 0;
+		text-align: left
+	}
+}
+/* structurer un peu les titres en leur donnant une importance typographique croissante */
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.6em;
+	padding: 2em 0 2em 0;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+/* Distinguer un peu les sections et articles */
+
+section {
+	position: relative;
+	margin: 0 0 0 1em;
+	background: rgba(80, 80, 80, 0.3)
+}
+
+article {
+	position: relative;
+	width: 100%;
+	background: rgba(100, 100, 100, 0.3);
+}
+
+article p,
+article li {
+	font-size: 1.1em;
+	margin: auto;
+	line-height: 1.3em
+}
+
+article li {
+	margin-left: 2em;
+}
+/* traitement mobile puis normal */
+
+article h3 {
+	display: inline-block;
+	width: 100%;
+}
+
+@media screen and ( min-width: 640px) {
+	article h3 {
+		display: inline-block;
+		width: 60%;
+	}
 }
 /* colorier les blocs principaux*/
 
@@ -100,41 +187,4 @@ nav {
 
 footer {
 	background: rgba(0, 0, 255, 0.3);
-}
-/* structurer un peu les titres en leur donnant une importance typographique croissante*/
-
-h1 {
-	font-size: 30px;
-	color: #F00
-}
-
-h2 {
-	font-size: 24px:
-}
-
-h3 {
-	font-size: 18px;
-}
-/* positionner les blocs nav et main */
-
-nav {
-	display: block;
-	width: 30%;
-	float: left
-}
-
-main {
-	width: 70%;
-	float: right
-}
-
-#outils {
-	position: absolute;
-	top: 0;
-	right: 0
-}
-/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
-
-footer {
-	clear: both
 }

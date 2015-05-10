@@ -1,6 +1,6 @@
 V 3.0
 
-*****
+Simplifié, plus clean, avec début de media queries
 
 V 2.0
 

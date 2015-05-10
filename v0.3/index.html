@@ -11,12 +11,12 @@
 
 <body>
 	<header id="couverture" role=“banner”>
-		<img alt="Région Île de France" src="http://dummyimage.com/212x93/000/ff0000.png&amp;text=IDF">
-		<h1>Le Magazine facile à lire et à comprendre <span id="numero">n°01</span></h1>
+		<img class="logo" alt="Région Île de France" src="http://dummyimage.com/212x93/000/ff0000.png&amp;text=IDF">
+		<h1 class="titre">Le Magazine facile à lire et à comprendre <span id="numero">n°01</span></h1>
 		<nav id="outils">
+			<a href="#sommaire">Aller au sommaire</a>
 			<div class="outil access">
-				<a href="#sommaire">Aller au sommaire</a>
-				<p>choisir l'affichage</p>
+				<p>Affichage</p>
 				<select name="affichage">
 					<option value="normal" onclick="changeCSS('css/dev.css', 0);">normal</option>
 					<option value="contraste" onclick="changeCSS('css/dev-contrast.css', 0);">contraste inversé</option>
@@ -26,7 +26,7 @@
 				</select>
 			</div>
 			<div class="outil archive">
-				<p>Voir les anciens numéros</p>
+				<p>Anciens numéros</p>
 				<select name="numéros">
 					<option value="1">Numéro 1</option>
 					<option value="2">Numéro 2</option>
@@ -38,8 +38,12 @@
 		<a href="#couverture">Retour à l'accueil</a>
 		<p>Rubrique 01</p>
 		<ol>
+
 			<li>
 				<a href="#1" class="">Article 1</a>
+			</li>
+			<li>
+				<a href="#insert" class="">Insert</a>
 			</li>
 			<li>
 				<a href="#2" class="">Article 2</a>
@@ -54,30 +58,136 @@
 
 	</nav>
 	<main id="contenu" role=“main”>
-		<section id="edito">
-			<h2>Edito</h2>
-		</section>
-		<section id="S1" class="articles">
+
+		<section id="articles" class="articles">
 			<h2>Rubrique 01</h2>
+
+
 			<article id="1" class="article">
+
 				<h3>Article 1</h3>
-				<div class="a-propos">A propos</div>
-				<div class="contenu">Contenu</div>
+				<div class="next-top"><a href="#2" class="next">Prochain article</a>
+					<a href="#sommaire" class="top">Revenir au sommaire</a>
+				</div>
+				<div class="contenu">
+					<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+					<h4>Header Level 4</h4>
+
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ol>
+
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+					</blockquote>
+
+					<h4>Header Level 4</h4>
+
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ul>
+				</div>
 			</article>
+			<article id="insert" class="article">
+
+				<h3>Insert</h3>
+				<div class="next-top"><a href="#2" class="next">Prochain article</a>
+					<a href="#sommaire" class="top">Revenir au sommaire</a>
+				</div>
+				<div class="contenu">
+					Contenu insert
+				</div>
+			</article>
+
 			<article id="2" class="article">
+
 				<h3>Article 2</h3>
-				<div class="a-propos">A propos</div>
-				<div class="contenu">Contenu</div>
+				<div class="next-top"><a href="#3" class="next">Prochain article</a>
+					<a href="#sommaire" class="top">Revenir au sommaire</a>
+				</div>
+				<div class="contenu">
+					<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+					<h4>Header Level 4</h4>
+
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ol>
+
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+					</blockquote>
+
+					<h3>Header Level 3</h3>
+
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ul>
+				</div>
 			</article>
+
+
 			<article id="3" class="article">
+
 				<h3>Article 3</h3>
-				<div class="a-propos">A propos</div>
-				<div class="contenu">Contenu</div>
+				<div class="next-top"><a href="#4" class="next">Prochain article</a>
+					<a href="#sommaire" class="top">Revenir au sommaire</a>
+				</div>
+				<div class="contenu">
+					<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+					<h4>Header Level 4</h4>
+
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ol>
+
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+					</blockquote>
+
+					<h3>Header Level 3</h3>
+
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ul>
+				</div>
 			</article>
+
 			<article id="4" class="article">
+
 				<h3>Article 4</h3>
-				<div class="a-propos">A propos</div>
-				<div class="contenu">Contenu</div>
+				<div class="next-top"><a href="#" class="next">Prochain article</a>
+					<a href="#sommaire" class="top">Revenir au sommaire</a>
+				</div>
+				<div class="contenu">
+					<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+					<h4>Header Level 4</h4>
+
+					<ol>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ol>
+
+					<blockquote>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+					</blockquote>
+
+					<h3>Header Level 3</h3>
+
+					<ul>
+						<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+						<li>Aliquam tincidunt mauris eu risus.</li>
+					</ul>
+				</div>
 			</article>
 		</section>
 
