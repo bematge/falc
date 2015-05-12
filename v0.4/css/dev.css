@@ -19,43 +19,6 @@ li {
 }
 */
 /* au dessus de chaque article, navigation rapide */
-
-.next-top {
-    display: block;
-    width: 30%;
-    float: right;
-    background: rgba(80, 80, 80, 0.3);
-}
-
-.next {
-    width: 50%;
-    margin: 5em auto 5em auto;
-    vertical-align: middle
-}
-
-.top {
-    width: 50%;
-    margin: 5em auto 5em auto;
-    text-align: center
-}
-
-@media screen and ( min-width: 640px) {
-    .next-top {
-        display: block;
-        width: 100%;
-        background: rgba(80, 80, 80, 0.3);
-    }
-    .next {
-        width: 100%;
-        margin: 0;
-        text-align: left
-    }
-    .top {
-        width: 100%;
-        margin: 0;
-        text-align: left
-    }
-}
 /* structurer un peu les titres en leur donnant une importance typographique croissante */
 
 h1 {
@@ -71,12 +34,6 @@ h3 {
     font-size: 1.4em;
 }
 /* Distinguer un peu les sections et articles */
-
-article {
-    position: relative;
-    width: 100%;
-    background: rgba(100, 100, 100, 0.3);
-}
 
 article p,
 article li {

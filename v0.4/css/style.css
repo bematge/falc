@@ -86,70 +86,74 @@ a:visited {
     nav {
         display: block;
         float: left;
-        width: 30%;
-        min-width: 220px;
+        width: 20%;
     }
     #sommaire {
         position: relative;
         display: block;
         left: 1em;
         top: 2em;
-        min-width: 220px;
-    }
-    #sommairefixe {
-        display: block;
-        position: fixed;
-        min-width: 220px;
-        top: 120px;
-        bottom: 60px;
     }
     #sommaire a {
         display: block;
         color: #000;
         text-decoration: none;
         line-height: 1.5em;
-        padding: 0.2em 1em 0.2em 1em;
+        padding: 0em 1em 0em 2.4em;
+        border: 2px #fff solid;
     }
     #sommairefixe li {
         list-style: none;
         line-height: 1.5em;
     }
-    #sommaire li a {
-        display: block;
-        padding: 0.2em 1em 0.2em 1em;
-        color: #000;
-        text-decoration: none;
-    }
-    #sommaire li .active {
+    #sommaire .active {
         /* lien de menu entouré quand article à l'écran */
         
         display: block;
         background-color: #cecece;
+        border: 2px solid #c1c1c1;
+        border-radius: 25px;
     }
     .lien-sommaire {
         display: inline-block;
         background: url('../img/home.svg') no-repeat;
+        background-position: 0px center;
     }
     .lien-edito {
-        display: inline-block;
         background: url('../img/edito.svg') no-repeat;
+        background-position: 0px center;
     }
     .lien-article {
-        display: inline-block;
         background: url('../img/article.svg') no-repeat;
+        background-position: 0px center;
     }
     /* Position et style de la partie main de contenu principal */
     
     main {
         display: block;
-        width: 70%;
-        min-width: 740px;
+        width: 75%;
         float: right
     }
     /* Position et style des articles */
     
-    article h3 {
-        padding-top: 2em
+    article h1 {
+        padding-top: 1.5em
+    }
+    .next-top {
+        text-align: right;
+        display: block;
+        line-height: 30px;
+        width: 100%;
+        background: #FFF;
+    }
+    .next-top a {
+        margin-right: 1em;
+        padding-left: 30px;
+    }
+    .lien-proch-article {
+        display: inline-block;
+        background: url('../img/next.svg') no-repeat;
+        background-position: 0px center;
     }
     /* Position et style du footer */
     
