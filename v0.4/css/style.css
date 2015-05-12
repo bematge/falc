@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', 'Sans-serif'
+}
+
+a,
+a:link {
+    color: #F00;
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+a:visited {
+    color: #D66;
+}
+
+@media screen and (min-width: 60em) {
+    /* Position et style de la partie header */
+    
+    header {
+        position: relative;
+        width: 60em;
+        margin: auto;
+    }
+    header img {
+        display: block;
+    }
+    header h1 {
+        font-size: 1.8em;
+        font-weight: normal;
+        margin: 1em 0.5em 1em 0.5em;
+    }
+    header #numero {
+        font-size: 0.8em;
+    }
+    /* Barre d'outils et d'accès */
+    
+    #outils {
+        display: inline-block;
+        position: absolute;
+        width: 12em;
+        top: 0;
+        right: 0
+    }
+    .nav-icon {
+        display: inline;
+        height: 20px;
+        width: 20px;
+        position: relative;
+        background: url('../img/contrast.png') no-repeat;
+    }
+    button {
+        padding: 0;
+        margin: 0;
+        outline: 0;
+        border: 0;
+        background: none
+    }
+    .nav-icon span {
+        visibility: hidden
+    }
+}

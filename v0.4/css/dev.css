@@ -1,0 +1,155 @@
+@import url('reset.css');
+/* OBLIGATOIRE POUR FONCTIONNEMENT JAVASCRIPT */
+
+#sommaire ol .active {
+    /* lien de menu entouré quand article à l'écran */
+    
+    display: block;
+    border: 2px solid #f00;
+}
+
+footer {
+    /* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+    
+    clear: both
+}
+/* organiser le header */
+
+#sommaire ol li a:hover {
+    color: #f00;
+}
+
+header {
+    display: relative;
+}
+
+header .logo,
+header .titre {
+    vertical-align: top;
+    display: inline-block;
+}
+/* menu flottant*/
+
+#sommaire {
+    position: relative
+}
+
+#sommaire ol {
+    position: fixed
+}
+/* positionner les blocs nav et main */
+
+nav {
+    display: block;
+    width: 20%;
+    float: left
+}
+
+main {
+    display: block;
+    width: 80%;
+    float: right
+}
+
+li {
+    list-style: square;
+    margin-left: 1em;
+}
+/* au dessus de chaque article, navigation rapide */
+
+.next-top {
+    display: block;
+    width: 30%;
+    float: right;
+    background: rgba(80, 80, 80, 0.3);
+}
+
+.next {
+    width: 50%;
+    margin: 5em auto 5em auto;
+    vertical-align: middle
+}
+
+.top {
+    width: 50%;
+    margin: 5em auto 5em auto;
+    text-align: center
+}
+
+@media screen and ( min-width: 640px) {
+    .next-top {
+        display: block;
+        width: 100%;
+        background: rgba(80, 80, 80, 0.3);
+    }
+    .next {
+        width: 100%;
+        margin: 0;
+        text-align: left
+    }
+    .top {
+        width: 100%;
+        margin: 0;
+        text-align: left
+    }
+}
+/* structurer un peu les titres en leur donnant une importance typographique croissante */
+
+h1 {
+    font-size: 1.8em;
+}
+
+h2 {
+    font-size: 1.6em;
+    padding: 2em 0 2em 0;
+}
+
+h3 {
+    font-size: 1.4em;
+}
+/* Distinguer un peu les sections et articles */
+
+section {
+    position: relative;
+    margin: 0 0 0 1em;
+    background: rgba(80, 80, 80, 0.3)
+}
+
+article {
+    position: relative;
+    width: 100%;
+    background: rgba(100, 100, 100, 0.3);
+}
+
+article p,
+article li {
+    font-size: 1.1em;
+    margin: auto;
+    line-height: 1.3em
+}
+
+article li {
+    margin-left: 2em;
+}
+/* traitement mobile puis normal */
+
+article h3 {
+    display: inline-block;
+    width: 100%;
+}
+
+@media screen and ( min-width: 640px) {
+    article h3 {
+        display: inline-block;
+        width: 60%;
+    }
+}
+/* colorier les blocs principaux*/
+
+main {
+    background: rgba(0, 255, 0, 0.3);
+}
+
+footer {
+    background: rgba(0, 0, 255, 0.3);
+}
