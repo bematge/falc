@@ -2,15 +2,7 @@
 /* OBLIGATOIRE POUR FONCTIONNEMENT JAVASCRIPT */
 /* organiser le header */
 
-header {
-    display: relative;
-}
 
-header .logo,
-header .titre {
-    vertical-align: top;
-    display: inline-block;
-}
 /* positionner les blocs nav et main 
 
 li {
@@ -19,7 +11,7 @@ li {
 }
 */
 /* au dessus de chaque article, navigation rapide */
-/* structurer un peu les titres en leur donnant une importance typographique croissante */
+/* structurer un peu les titres en leur donnant une importance typographique croissante 
 
 h1 {
     font-size: 1.8em;
@@ -33,6 +25,8 @@ h2 {
 h3 {
     font-size: 1.4em;
 }
+
+*/
 /* Distinguer un peu les sections et articles */
 
 article p,

@@ -1,3 +1,5 @@
+@import url('reset.css');
+
 body {
 	font-family: 'Arial', 'Sans-serif'
 }
@@ -30,11 +32,23 @@ a:visited {
 	header h1 {
 		font-size: 1.8em;
 		font-weight: normal;
+		max-width:70%;
 		margin: 1em 0.5em 1em 0.5em;
 	}
 	header #numero {
 		font-size: 0.8em;
 	}
+	
+	header {
+    display: relative;
+}
+
+header .logo,
+header .titre {
+    vertical-align: top;
+    display: inline-block;
+}
+	
 	/* Barre d'outils et d'accès */
 	
 	#outils {
@@ -136,25 +150,61 @@ a:visited {
 	}
 	/* Position et style des articles */
 	
+	article {
+		border :1px solid #cecece;
+		padding:1em}
+	
 	article h1 {
-		padding-top: 1.5em
+		display:inline-block;
+		width:70%;
+		font-size: 2.5em;
+		padding: 1em 0em 1em 0em;
 	}
+	
+	article h2 {
+		font-size: 1.8em;
+		padding: 0.3em 0em 0.3em 0em;
+	}
+
+	article p, article li {
+		font-size: 1.4em;		
+		padding: 0.2em 0em 0.2em 0em;
+	}
+
+
+	.apropos {
+		display:inline-block;
+		background:#cecece;
+		color:#FFF;
+
+	.apropos p, .apropos li {
+		margin-left:0.5em;
+		font-size:0.8em}
+
+/* REVOIR NEXT - TOP
 	.next-top {
-		text-align: right;
 		display: block;
-		line-height: 30px;
+		background:#FFF;
 		width: 100%;
+				margin-bottom:3px
+
 		background: #FFF;
 	}
 	.next-top a {
 		margin-right: 1em;
-		padding-left: 30px;
+				padding-left: 30px;
 	}
 	.lien-proch-article {
 		display: inline-block;
+		position:relative;
+		line-height:24px;
+		left:2em;
 		background: url('../img/next.svg') no-repeat;
-		background-position: 0px center;
+		background-position: 0px 0px;
 	}
+	
+	*/
+	
 	/* Position et style du footer */
 	
 	footer {
