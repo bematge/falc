@@ -1,0 +1,7 @@
+@import url('reset.css');
+@import url('dev.css');
+/* cacher les pictos */
+
+img {
+	display: none
+}

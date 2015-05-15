@@ -1,0 +1,10 @@
+@import url('reset.css');
+@import url('dev.css');
+body {
+	background-color: #000;
+	color: #fff
+}
+
+a {
+	color: yellow
+}
