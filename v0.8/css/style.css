@@ -43,7 +43,7 @@ a:visited {
 		display: block;
 		margin-right: 48px;
 		font-size: 1.4em;
-		font-weight: normal;
+		font-weight: bold;
 		margin-left: 70px;
 	}
 	header #numero {
@@ -230,7 +230,8 @@ a:visited {
 		display: inline;
 		margin-right: 2em;
 	}
-	.mentions p {
+	.mentions p,
+	.mentions a {
 		display: none;
 	}
 	.credits p {
@@ -258,7 +259,7 @@ a:visited {
 		display: inline-block;
 		font-size: 1.5em;
 		height: 70px;
-		font-weight: normal;
+		font-weight: bold;
 		max-width: 65%;
 		margin: 1em 0.5em 0em 0.5em;
 	}
@@ -290,18 +291,17 @@ a:visited {
 		float: right;
 		background: #000;
 	}
-	#icon-contrast {
-		height: 16px;
-		width: 16px;
-		margin: 0 4px 0 4px;
-		background: url('../img/contrast.svg') no-repeat;
+	.nav-icon {
+		height: 24px;
+		width: 24px;
+		display: inline-block;
+		float: right;
+		background: url('../img/contrast.svg') no-repeat #000 center 2px;
+		cursor: pointer;
 	}
-	button {
-		padding: 0;
-		margin: 0;
-		outline: 0;
-		border: 0;
-		background: #000;
+	.nav-icon input,
+	.nav-icon label {
+		display: none;
 	}
 	.nav-icon span {
 		visibility: hidden;
@@ -485,7 +485,7 @@ a:visited {
 	}
 	header h1 {
 		font-size: 1.8em;
-		font-weight: normal;
+		font-weight: bold;
 		max-width: 70%;
 		margin: 1.6em 0.5em 0em 0.5em;
 	}
@@ -521,20 +521,12 @@ a:visited {
 		width: 24px;
 		display: inline-block;
 		float: right;
-		background: #000;
+		background: url('../img/contrast.svg') no-repeat #000 center 2px;
+		cursor: pointer;
 	}
-	#icon-contrast {
-		height: 16px;
-		width: 16px;
-		margin: 0 4px 0 4px;
-		background: url('../img/contrast.svg') no-repeat;
-	}
-	button {
-		padding: 0;
-		margin: 0;
-		outline: 0;
-		border: 0;
-		background: #000;
+	.nav-icon input,
+	.nav-icon label {
+		display: none;
 	}
 	.nav-icon span {
 		visibility: hidden;
