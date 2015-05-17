@@ -316,7 +316,6 @@ a:visited {
 	nav {
 		display: block;
 		background: #333366;
-		stroke: #fff;
 		position: relative;
 		width: 100%;
 	}
@@ -538,7 +537,6 @@ a:visited {
 	nav {
 		display: block;
 		background: #333366;
-		stroke: #fff;
 		float: left;
 		position: relative;
 		margin-left: 1%;
