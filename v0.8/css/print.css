@@ -1,16 +1,48 @@
-	header {
-		position: relative;
-		width: 100%;
-		margin: auto;
-	}
-	
-	header img {
-		display: none;
-	}
-	
-	header h1 {
-		font-size: 1.8em;
-		font-weight: normal;
-		max-width: 70%;
-		margin: 1.6em 0.5em 0em 0.5em;
-	}
+@import url('reset.css');
+header {
+	position: relative;
+	width: 100%;
+	margin: auto;
+}
+
+header .logo-idf {
+	display: block !important;
+	width: 100%;
+	height: 93px;
+	background: url('../img/logo.png') no-repeat;
+}
+
+header h1 {
+	font-size: 1.8em;
+	font-weight: normal;
+	max-width: 70%;
+	display: relative;
+	margin-top: -40px;
+	margin-bottom: 40px;
+}
+
+#outils {
+	display: none
+}
+
+.mobile-icon {
+	display: none;
+}
+
+.logo-falc {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+#sommaire a {
+	font-size: 18px;
+}
+
+#sommairefixe + a {
+	padding: 12px 12px 12px 0px;
+}
+
+#sommaire li {
+	padding: 12px 12px 12px 0px;
+}
