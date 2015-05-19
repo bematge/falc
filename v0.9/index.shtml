@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width">
+	<link href="css/style.css" rel='stylesheet' type='text/css' media='screen'>
+	<link href="css/print.css" rel='stylesheet' type='text/css' media='print'>
+
+	<!-- <link href="css/dev.css" rel='stylesheet' type='text/css' media='screen'> -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+	<script type="text/javascript" src="js/dev.js"></script>
+	<title>Le magazine facile à lire et à comprendre de la Région Île-de-France. Numéro 00</title>
+</head>
+
+<body>
+	<header id="couverture">
+
+
+		<a title="Le Magazine de la région Île-de-France, Accueil" href="#">
+			<div class="logo-idf"><span class="css-hide">Le Magazine de la région Île-de-France, Accueil</span>
+			</div>
+		</a>
+
+		<h1 class="titre">Facile à lire et à comprendre <span id="numero">n°00</span></h1>
+		<nav id="outils">
+			<a href="#sommaire">Sommaire</a>
+			<a href="#articles">Contenus</a>
+			<div class="nav-icon">
+				<label for="contraste">contraste</label>
+				<input id="contraste" type="checkbox" />
+
+				<!-- <button id="icon-contrast" onclick="changeCSS('css/dev-contrast.css', 0);"><span>contraste</span>
+				</button> -->
+
+
+
+			</div>
+
+		</nav>
+	</header>
+	<div id="page">
+		<nav id="sommaire">
+			<label class="mobile-icon" for="mobile-deploy">Menu</label>
+			<input id="mobile-deploy" class="mobile-icon" type="checkbox">
+			<div id="sommairefixe">
+				<img alt="Label Facile à lire et a comprendre" width="125" height="85" src="img/logo-falc-140.gif" class="logo-falc">
+				<a href="#couverture" class="lien-sommaire">Sommaire de ce numéro</a>
+				<ol>
+					<li>
+						<a href="#1" class="lien-article">Ecrire facile à lire ce n'est pas si simple</a>
+					</li>
+					<li>
+						<a href="#2" class="lien-article">Promenez-vous dans les parcs naturels</a>
+					</li>
+					<li>
+						<a href="#3" class="lien-article">Le gâtinais français</a>
+					</li>
+					<li>
+						<a href="#4" class="lien-article">Le cresson</a>
+					</li>
+				</ol>
+			</div>
+		</nav>
+		<main id="contenu">
+
+			<section id="articles" class="articles">
+				<h2 class="css-hide">Rubrique Facile à lire et à comprendre</h2>
+
+
+				<!--#include virtual="/article/1-ecrire-falc.html" -->
+
+				<!--#include virtual="/article/2-parcs-naturels.html" -->
+
+				<!--#include virtual="/article/3-gatinais.html" -->
+
+				<!--#include virtual="/article/4-cresson.html" -->
+
+
+			</section>
+		</main>
+	</div>
+	<footer id="mentions-credits" class="clear">
+		<span><a href="#cred1">Mentions légales</a></span>
+		<div id="cred1" class="mentions">
+			<p>Sin autem ad adulescentiam perduxissent, dirimi tamen interdum contentione vel uxoriae condicionis vel commodi alicuius, quod idem adipisci uterque non posset. Quod si qui longius in amicitia provecti essent, tamen saepe labefactari, si in honoris contentionem incidissent; pestem enim nullam maiorem esse amicitiis quam in plerisque pecuniae cupiditatem, in optimis quibusque honoris certamen et gloriae; ex quo inimicitias maximas saepe inter amicissimos exstitisse.</p>
+
+			<p>Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.</p>
+		</div>
+
+
+		<div id="cred2" class="credits">
+			<a href="#cred2"><span>Credits</span></a>
+			<p>Textes transcrits par Pierre Barreau, Vincent Keromest, Rémy Laurenceau, Félix Serra Albano
+				<br/>
+				<em>ESAT Avenir APEI Les Courlis de Chatou</em>
+			</p>
+			<p>Cindy Dumur, Richard Escat, Bruno Kopaczynski, Victoria Lardet, Guillaume Lecardonnel, Margaux Vincent
+				<br/>
+				<em>ESAT Avenir APEI La Roseraie de Carrières-sur-Seine</em>
+			</p>
+		</div>
+
+		<div class="contact">
+			<a href="mailto:contact@iledefrance.fr">Envoyer un email</a>
+		</div>
+
+	</footer>
+	<script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+</body>
+
+</html>
