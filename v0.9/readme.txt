@@ -1,18 +1,10 @@
-V 0.4
+A faire / bugs 
 
-début de mise à la charte IDF
 
-V 0.3
+1/ JS pour le contraste à revoir pour le déclenchement lié à la checkbox
 
-Simplifié, plus clean, avec début de media queries
+2/ Revoir le titre header pour tablette et smartphone. 
 
-V 0.2
+3/ Revoir la fermeture de la fenetre modale en bas de page
 
-Squelette HTML
-+ Squelette articles
-
-+ JS : Changement de feuille de style et suivi des articles affichés dans le menu flottant
-
-V 0.1
-
-Squelette HTML
+4/ revoir éventuellement la barre d'outils en haut du header

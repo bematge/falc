@@ -1,0 +1,25 @@
+body {
+	background: #000
+}
+
+h1,
+h2,
+h3,
+p,
+li,
+dl,
+dd,
+dt,
+ul,
+adress,
+span {
+	color: #fff
+}
+
+.nav-article + dl {
+	background: #222
+}
+
+article .internet {
+	background: #222
+}

@@ -2,7 +2,7 @@
 body {
 	font-family: 'Arial', 'Sans-serif';
 	display: block;
-	min-width: 320px;
+	min-width: 240px;
 }
 
 a,
@@ -100,7 +100,15 @@ a:visited {
 	text-decoration: none;
 }
 
-@media screen and (max-width: 539px) {
+.nav-icon input {
+	visibility: hidden;
+}
+
+.nav-icon label {
+	background: ;
+}
+
+@media screen and (max-width: 319px) {
 	header {
 		display: table-cell;
 		position: relative;
@@ -217,12 +225,241 @@ a:visited {
 		color: #f00;
 		padding: 0.3em 0.7em 0.3em 0em;
 	}
+	.h2-image {
+		display: inline-block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
 	article h2 {
 		display: block;
 		background: url('../img/logo-falc-60.gif') no-repeat bottom right #336;
 		color: #fff;
 		font-size: 1.5em;
-		padding: 0.6em 0em 0.6em 0.3em;
+		padding: 20px 0em 20px 10px;
+		padding-right: 56px;
+		border: #336 1px solid;
+	}
+	article h3 {
+		font-size: 1.4em;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	.nav-article + p,
+	.nav-article + dl {
+		display: block;
+		border-left: #efefef 15px solid;
+		font-weight: bolder;
+		padding: 1em 0em 1em 1em;
+		margin: 1em 0em 1em 0em;
+	}
+	article p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		padding: 0.4em 0em 0.4em 0em;
+	}
+	article li {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		margin-left: 2.5em;
+		padding-left: 1em;
+		list-style: disc;
+	}
+	article dt {
+		display: inline;
+		font-weight: bold;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+	article dd {
+		display: inline;
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+	article dd li {
+		font-size: 1.4rem;
+	}
+	article .internet {
+		display: inline-block;
+		width: 99%;
+		background: #efefef;
+		color: #666;
+	}
+	.image-p {
+		display: none;
+	}
+	.right {
+		float: right;
+		margin-left: 3em;
+	}
+	.left {
+		float: left;
+		margin-right: 3em;
+	}
+	.apropos {
+		display: inline-block;
+		color: #666;
+		width: 100%;
+		margin-top: 1em;
+		border-top: #666 1px solid;
+	}
+	.apropos p {
+		margin-left: 0.5em;
+		font-size: 1rem
+	}
+	footer {
+		border-top: 40px #F00 solid;
+		padding: 0.2em 1em 0.2em 1em;
+		text-align: center;
+		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+	}
+	#mentions-credits {
+		display: block;
+	}
+	#mentions-credits div {
+		display: inline;
+		margin-right: 2em;
+	}
+	.mentions p,
+	.mentions a {
+		display: none;
+	}
+	.credits p {
+		display: none
+	}
+	.contact p {
+		display: none
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 539px) {
+	header {
+		display: table-cell;
+		position: relative;
+		height: 70px;
+		vertical-align: middle;
+	}
+	header .logo-idf {
+		position: absolute;
+		display: block;
+		width: 60px;
+		height: 65px;
+		top: 0;
+		left: 0;
+		background: url('../img/logo-sq.png') no-repeat;
+	}
+	header h1 {
+		display: block;
+		margin-right: 48px;
+		font-size: 1.4em;
+		font-weight: bold;
+		margin-left: 70px;
+	}
+	header #numero {
+		font-size: 1em;
+	}
+	/* Barre d'outils et d'accès */
+	
+	#outils {
+		display: none;
+	}
+	/* Position et style de la partie page principale */
+	
+	#page {
+		border-top: 1px #F00 solid;
+		margin-bottom: 0;
+	}
+	/* Position et style de la partie menu flottant gauche */
+	
+	nav {
+		display: block;
+		background: #333366;
+		position: relative;
+		width: 100%;
+	}
+	#sommaire {
+		position: relative;
+		padding: 0em 0em 0em 0em;
+	}
+	#sommaire input {
+		display: none
+	}
+	#sommaire label {
+		font-size: 0;
+	}
+	.mobile-icon {
+		display: block;
+		position: absolute;
+		border: 0;
+		background: url('../img/nav.png');
+		height: 48px;
+		width: 48px;
+		cursor: pointer;
+		top: -60px;
+		right: 10px;
+	}
+	.mobile-icon:checked {
+		background: url('../img/nav.png');
+	}
+	.mobile-icon + div {
+		display: none;
+	}
+	.mobile-icon:checked + div {
+		display: block;
+		position: relative;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	nav input:checked {}
+	.logo-falc {
+		display: none;
+	}
+	#sommaire a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: 0.2em;
+		max-width: 499px;
+		border: 2px #333366 solid;
+	}
+	#sommairefixe li {
+		margin-top: 0.4em;
+		display: inline-table;
+		width: 48%;
+	}
+	#sommaire a:hover {
+		/* lien de menu entouré au survol de la souris */
+		
+		display: block;
+		border: 2px #fff solid;
+	}
+	/* Position et style des articles */
+	
+	article {
+		padding: 2em;
+		margin-bottom: 1em;
+	}
+	.nav-article {
+		display: block;
+		position: relative;
+		top: 0em;
+		padding: 0.5em 0.1em 0.5em 0.3em;
+	}
+	.nav-article a {
+		display: inline-block;
+		color: #f00;
+		padding: 0.3em 0.7em 0.3em 0em;
+	}
+	.h2-image {
+		display: inline-block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	article h2 {
+		display: block;
+		background: url('../img/logo-falc-60.gif') no-repeat bottom right #336;
+		color: #fff;
+		font-size: 1.5em;
+		padding: 20px 0em 20px 10px;
 		padding-right: 56px;
 		border: #336 1px solid;
 	}
@@ -273,6 +510,9 @@ a:visited {
 	.image-p {
 		margin: 1em 1em 0 0;
 		top: 1em;
+		max-width: 50%;
+		width: auto;
+		height: auto;
 	}
 	.right {
 		float: right;
@@ -442,12 +682,19 @@ a:visited {
 		color: #f00;
 		padding: 0.3em 0.7em 0.3em 0em;
 	}
+	.h2-image {
+		display: inline-block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
 	article h2 {
 		display: block;
 		background: url('../img/logo-falc-60.gif') no-repeat center right #336;
 		color: #fff;
+		max-width: 674px;
 		font-size: 2em;
-		padding: 0.6em 0em 0.6em 0.3em;
+		padding: 20px 0em 20px 10px;
 		padding-right: 56px;
 		border: #336 1px solid;
 	}
@@ -547,7 +794,7 @@ a:visited {
 	
 	header {
 		position: relative;
-		width: 960px;
+		max-width: 1024px;
 		height: 100px;
 		margin: auto;
 	}
@@ -562,10 +809,14 @@ a:visited {
 		font-size: 1.8em;
 		font-weight: bold;
 		max-width: 70%;
-		margin: 1.6em 0.5em 0em 0.5em;
+		margin: 0.6em 0.5em 0em 0.5em;
+	}
+	header #sous-titre {
+		font-size: 1.2rem;
+		font-weight: bold;
 	}
 	header #numero {
-		font-size: 1em;
+		font-size: 1.2rem;
 	}
 	header .logo,
 	header .titre {
@@ -576,29 +827,29 @@ a:visited {
 	#outils {
 		display: inline-block;
 		position: absolute;
-		background: #F00;
-		color: #FFF;
+		background: #fff;
+		border: 1px solid #333;
 		height: 24px;
 		width: 12em;
 		top: 0;
 		right: 0
 	}
 	#outils a {
-		color: #FFF;
+		color: #666;
 		line-height: 1.3em;
 		margin-left: 0.4em;
 	}
 	.nav-icon {
+		display: inline
+	}
+	.nav-icon label {
 		height: 24px;
 		width: 24px;
-		display: inline-block;
+		display: inline;
 		float: right;
 		background: url('../img/contrast.svg') no-repeat #000 center 2px;
 		cursor: pointer;
-	}
-	.nav-icon input,
-	.nav-icon label {
-		display: none;
+		font-size: 0;
 	}
 	.nav-icon span {
 		visibility: hidden;
@@ -680,7 +931,7 @@ a:visited {
 		display: inline-block;
 		overflow: visible;
 		z-index: 1;
-		width: 25%;
+		width: 20%;
 		padding: 0.5em 0.1em 0.5em 0.3em;
 	}
 	.nav-article a {

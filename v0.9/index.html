@@ -6,8 +6,7 @@
 	<meta name="viewport" content="width=device-width">
 	<link href="css/style.css" rel='stylesheet' type='text/css' media='screen'>
 	<link href="css/print.css" rel='stylesheet' type='text/css' media='print'>
-
-	<!-- <link href="css/dev.css" rel='stylesheet' type='text/css' media='screen'> -->
+	<link id="contrast-style" href="css/noconstast.css" rel='stylesheet' type='text/css' media='screen'>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script type="text/javascript" src="js/dev.js"></script>
 	<title>Le magazine facile à lire et à comprendre de la Région Île-de-France. Numéro 00</title>
@@ -15,29 +14,25 @@
 
 <body>
 	<header id="couverture">
+		<nav id="outils">
+			<a href="#sommaire">Sommaire</a>
+			<a href="#articles">Contenus</a>
+			<div class="nav-icon">
+				<label for="contraste">contraste</label>
+				<input id="contraste" type="checkbox" onclick="changecss();" />
+				<!-- onChange="changeCSS('css/contrast.css', 2);" -->
+			</div>
 
+		</nav>
 
 		<a title="Le Magazine de la région Île-de-France, Accueil" href="#">
 			<div class="logo-idf"><span class="css-hide">Le Magazine de la région Île-de-France, Accueil</span>
 			</div>
 		</a>
 
-		<h1 class="titre">Facile à lire et à comprendre <span id="numero">n°00</span></h1>
-		<nav id="outils">
-			<a href="#sommaire">Sommaire</a>
-			<a href="#articles">Contenus</a>
-			<div class="nav-icon">
-				<label for="contraste">contraste</label>
-				<input id="contraste" type="checkbox" />
+		<h1 class="titre">Le magazine de la région île de France<br/><span id="sous-titre">Facile à lire et à comprendre
+			</span><span id="numero">n°00</span></h1>
 
-				<!-- <button id="icon-contrast" onclick="changeCSS('css/dev-contrast.css', 0);"><span>contraste</span>
-				</button> -->
-
-
-
-			</div>
-
-		</nav>
 	</header>
 	<div id="page">
 		<nav id="sommaire">
@@ -396,7 +391,8 @@
 		<a href="#oModal-contact">Contact</a>
 
 		<div id="oModal-remerciement" class="oModal">
-			<a href="#mentions-credits" title="Fermer la fenêtre" class=" btn droite">X<br/><span>Fermer</span></a>
+			<!-- "#close"-->
+			<a href="#!" title="Fermer la fenêtre" class=" btn droite">X<br/><span>Fermer</span></a>
 			<div id="remerciements">
 				<h3>Remerciements</h3>
 				<p>Textes transcrits par Pierre Barreau, Vincent Keromest, Rémy Laurenceau, Félix Serra Albano
@@ -407,7 +403,7 @@
 				</p>
 			</div>
 			<div class="cf">
-				<a href="#mentions-credits" class="btn center" title="Fermer la fenêtre">Fermer</a>
+				<a href="#!" class="btn center" title="Fermer la fenêtre">Fermer</a>
 			</div>
 		</div>
 		<div id="oModal-mentions" class="oModal">
@@ -422,19 +418,18 @@
 				<p>Nihil morati post haec militares avidi saepe turbarum adorti sunt Montium primum, qui divertebat in proximo, levi corpore senem atque morbosum, et hirsutis resticulis cruribus eius innexis divaricaturn sine spiramento ullo ad usque praetorium traxere praefecti.</p>
 			</div>
 			<div class="cf">
-				<a href="#mentions-credits" class="btn center" title="Fermer la fenêtre">Fermer</a>
+				<a href="#" class="btn center" title="Fermer la fenêtre">Fermer</a>
 			</div>
 		</div>
 		<div id="oModal-contact" class="oModal">
-			<a href="#mentions-credits" title="Fermer la fenêtre" class=" btn droite">X<br/><span>Fermer</span></a>
+			<a href="#" title="Fermer la fenêtre" class=" btn droite">X<br/><span>Fermer</span></a>
 			<div id="contact">
 				<h3>Contact</h3>
 				<p>Pour toute demande d'information, vous pouvez nous <a href="mailto:contact@iledefrance.fr">adresser un email</a>
 				</p>
 			</div>
 			<div class="cf">
-				<a href="#mentions-credits" class="btn center" title="Fermer la fenêtre">Fermer</a>
-			</div>
+				<a href="#" class="btn center" title="Fermer la fenêtre">Fermer</a> </div>
 		</div>
 
 

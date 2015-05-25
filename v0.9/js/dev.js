@@ -1,3 +1,25 @@
+function changeCSS(cssFile, cssLinkIndex) {
+	var oldlink = document.getElementsByTagName("link").item(2),
+		newlink = document.createElement("link");
+
+	if (document.getElementById("contraste").checked) {
+
+		newlink.setAttribute("rel", "stylesheet");
+		newlink.setAttribute("type", "text/css");
+		newlink.setAttribute("href", "css/contrast.css");
+		document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
+		window.reload;
+	} else {}
+
+
+
+}
+
+
+
+
+
+
 if (window.matchMedia("(min-width: 960px)").matches) {
 
 	/* Fonciton de menu flottant */
@@ -53,30 +75,19 @@ if (window.matchMedia("(min-width: 960px)").matches) {
 	});
 
 	function onScroll(event) {
-			var scrollPosition = $(document).scrollTop();
-			$('nav a').each(function () {
-				var currentLink = $(this);
-				var refElement = $(currentLink.attr("href"));
-				if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
-					$('nav ul li a').removeClass("active");
-					currentLink.addClass("active");
-				} else {
-					currentLink.removeClass("active");
-				}
-			});
-		}
-		/* Fonction de changement de CSS à l'activation du lien de menu */
-
-
-	function changeCSS(cssFile, cssLinkIndex) {
-		var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-		var newlink = document.createElement("link");
-		newlink.setAttribute("rel", "stylesheet");
-		newlink.setAttribute("type", "text/css");
-		newlink.setAttribute("href", cssFile);
-		document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-		window.reload;
+		var scrollPosition = $(document).scrollTop();
+		$('nav a').each(function () {
+			var currentLink = $(this);
+			var refElement = $(currentLink.attr("href"));
+			if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+				$('nav ul li a').removeClass("active");
+				currentLink.addClass("active");
+			} else {
+				currentLink.removeClass("active");
+			}
+		});
 	}
+
 
 
 
