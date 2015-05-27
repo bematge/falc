@@ -33,7 +33,7 @@ function changeCSS(cssFile, cssLinkIndex) {
 
 
 
-if (window.matchMedia("(min-width: 960px)").matches) {
+if (window.matchMedia("(min-width: 960px)").matches && window.matchMedia("(min-height: 600px)").matches) {
 
 	/* Fonciton de menu flottant */
 

@@ -11,10 +11,7 @@
 		min-width: 240px;
 		max-width: 100%;
 		background: #C8C8C8;
-		
 	}
-	
-
 	a,
 	a:link {
 		color: #F00;
@@ -115,34 +112,38 @@
 	}
 }
 
-@media screen and (max-width: 320px)
+@media screen and (max-width: 420px)
 /* Règles petit smartphone - pas d'image */
 
 {
 	header {
-		display: table-cell;
+		display: block;
 		position: relative;
-		height: 70px;
-		vertical-align: middle;
-	}
-	header .logo-idf {
-		position: absolute;
-		display: block;
-		width: 60px;
 		height: 65px;
-		top: 0;
-		left: 0;
-		background: url('../img/theme/logo-sq.png') no-repeat;
+		background: #fff;
 	}
-	header h1 {
+	header > a {
+		background: url('../img/theme/logo-sq.png') no-repeat;
+		position: relative;
+		margin-left: 20px;
+		float: left;
+		width: 70px;
+		height: 65px;
+	}
+	header > h1 {
 		display: block;
-		margin-right: 48px;
-		font-size: 1.4em;
+		width: 80%;
+		position: relative;
+		font-size: 0.8rem;
 		font-weight: bold;
-		margin-left: 70px;
+		padding: 12px 0 0 0;
+	}
+	header #sous-titre {
+		font-size: 0.6rem;
+		font-weight: bold;
 	}
 	header #numero {
-		font-size: 1em;
+		font-size: 0.6rem;
 	}
 	/* Barre d'outils et d'accès */
 	
@@ -221,25 +222,24 @@
 	/* Position et style des articles */
 	
 	article {
-		padding: 2em;
+		padding: 1em;
 		margin-bottom: 1em;
+		background: #fff;
 	}
 	.nav-article {
 		display: block;
 		position: relative;
 		top: 0em;
-		padding: 0.5em 0.1em 0.5em 0.3em;
+		padding: 0.5em 0.3em 0.5em 0em;
 	}
 	.nav-article a {
 		display: inline-block;
-		color: #f00;
+		font-size: 0.8rem;
+		color: #666;
 		padding: 0.3em 0.7em 0.3em 0em;
 	}
 	.h2-image {
-		display: inline-block;
-		max-width: 100%;
-		width: auto;
-		height: auto;
+		display: none;
 	}
 	article h2 {
 		display: block;
@@ -257,9 +257,6 @@
 	.nav-article + p,
 	.nav-article + dl {
 		display: block;
-		border-left: #efefef 15px solid;
-		font-weight: bolder;
-		padding: 1em 0em 1em 1em;
 		margin: 1em 0em 1em 0em;
 	}
 	article p {
@@ -276,22 +273,19 @@
 	}
 	article dt {
 		display: inline;
-		font-weight: bold;
 		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 	article dd {
 		display: inline;
-		font-size: 1.4em;
+		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 	article dd li {
-		font-size: 1.4rem;
+		font-size: 1.1em;
 	}
 	article .internet {
 		display: inline-block;
-		width: 99%;
-		background: #efefef;
 		color: #666;
 	}
 	.image-p {
@@ -318,8 +312,6 @@
 	}
 	footer {
 		border-top: 40px #F00 solid;
-		padding: 0.2em 1em 0.2em 1em;
-		text-align: center;
 		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
 	}
 	#mentions-credits {
@@ -341,34 +333,37 @@
 	}
 }
 
-@media screen and (min-width: 321px) and (max-width: 540px)
+@media screen and (min-width: 421px) and (max-width: 640px)
 /* Règles smartphone */
 
 {
 	header {
-		display: table-cell;
+		display: block;
 		position: relative;
-		height: 70px;
-		vertical-align: middle;
-	}
-	header .logo-idf {
-		position: absolute;
-		display: block;
-		width: 60px;
 		height: 65px;
-		top: 0;
-		left: 0;
-		background: url('../img/theme/logo-sq.png') no-repeat;
+		background: #fff;
 	}
-	header h1 {
+	header > a {
+		background: url('../img/theme/logo-sq.png') no-repeat;
+		position: relative;
+		margin-left: 20px;
+		float: left;
+		width: 70px;
+		height: 65px;
+	}
+	header > h1 {
 		display: block;
-		margin-right: 48px;
-		font-size: 1.4em;
+		font-size: 1.2em;
+		position: relative;
 		font-weight: bold;
-		margin-left: 70px;
+		padding: 12px 0 0 0;
+	}
+	header #sous-titre {
+		font-size: 0.8rem;
+		font-weight: bold;
 	}
 	header #numero {
-		font-size: 1em;
+		font-size: 0.8rem;
 	}
 	/* Barre d'outils et d'accès */
 	
@@ -449,16 +444,17 @@
 	article {
 		padding: 2em;
 		margin-bottom: 1em;
+		background: #fff;
 	}
 	.nav-article {
 		display: block;
 		position: relative;
 		top: 0em;
-		padding: 0.5em 0.1em 0.5em 0.3em;
+		padding: 0.5em 0.3em 0.5em 0em;
 	}
 	.nav-article a {
 		display: inline-block;
-		color: #f00;
+		color: #666;
 		padding: 0.3em 0.7em 0.3em 0em;
 	}
 	.h2-image {
@@ -483,9 +479,6 @@
 	.nav-article + p,
 	.nav-article + dl {
 		display: block;
-		border-left: #efefef 15px solid;
-		font-weight: bolder;
-		padding: 1em 0em 1em 1em;
 		margin: 1em 0em 1em 0em;
 	}
 	article p {
@@ -502,22 +495,19 @@
 	}
 	article dt {
 		display: inline;
-		font-weight: bold;
 		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 	article dd {
 		display: inline;
-		font-size: 1.4em;
+		font-size: 1.1em;
 		line-height: 1.5em;
 	}
 	article dd li {
-		font-size: 1.4rem;
+		font-size: 1.1em;
 	}
 	article .internet {
 		display: inline-block;
-		width: 99%;
-		background: #efefef;
 		color: #666;
 	}
 	.image-p {
@@ -548,8 +538,6 @@
 	}
 	footer {
 		border-top: 40px #F00 solid;
-		padding: 0.2em 1em 0.2em 1em;
-		text-align: center;
 		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
 	}
 	#mentions-credits {
@@ -571,72 +559,60 @@
 	}
 }
 
-@media screen and (min-width: 541px) and (max-width: 960px)
+@media screen and (min-width: 641px) and (max-width: 960px)
 /* Règles tablette */
 
 {
 	header {
 		position: relative;
-		height: 90px;
-		vertical-align: middle;
+		height: 70px;
+		margin: auto;
+		border-top: 2px solid #F00;
+		background: #fff
 	}
-	header .logo-idf {
-		display: inline-block;
+	header > a {
+		background: url('../img/theme/logo-med.png') no-repeat;
+		position: relative;
+		margin-left: 20px;
+		float: left;
 		width: 160px;
 		height: 70px;
-		float: left;
-		background: url('../img/theme/logo-med.png') no-repeat;
+		width: 25%;
 	}
-	header h1 {
-		display: inline-block;
-		font-size: 1.5em;
-		height: 70px;
+	header > h1 {
+		font-size: 1.3em;
+		position: relative;
 		font-weight: bold;
-		max-width: 65%;
-		margin: 1em 0.5em 0em 0.5em;
+		padding: 15px 10px 10px 24px;
+	}
+	header #sous-titre {
+		font-size: 1rem;
+		font-weight: bold;
 	}
 	header #numero {
-		font-size: 1em;
+		font-size: 1.1rem;
 	}
 	/* Barre d'outils et d'accès */
 	
 	#outils {
-		display: inline-block;
+		display: inline;
 		position: absolute;
 		background: #F00;
 		color: #FFF;
-		height: 24px;
-		width: 10em;
+		height: 18px;
+		width: 140px;
 		top: 0;
-		right: 0
+		right: 5%;
 	}
-	#outils a {
+	#outils a,
+	#outils span {
 		color: #FFF;
-		font-size: 0.8em;
-		line-height: 1.8em;
-		margin-left: 0.5em;
+		font-size: 12px;
+		margin-left: 6px;
+		line-height: 12px;
 	}
 	.nav-icon {
-		height: 24px;
-		width: 24px;
-		display: inline-block;
-		float: right;
-		background: #000;
-	}
-	.nav-icon {
-		height: 24px;
-		width: 24px;
-		display: inline-block;
-		float: right;
-		background: url('../img/theme/contrast.svg') no-repeat #000 center 2px;
-		cursor: pointer;
-	}
-	.nav-icon input,
-	.nav-icon label {
-		display: none;
-	}
-	.nav-icon span {
-		visibility: hidden;
+		display: none
 	}
 	/* Position et style de la partie page principale */
 	
@@ -651,52 +627,78 @@
 		background: #333366;
 		position: relative;
 		width: 100%;
+		margin-bottom: 10px;
+		-moz-box-shadow: 0px 5px 5px 0px #656565;
+		-webkit-box-shadow: 0px 5px 5px 0px #656565;
+		-o-box-shadow: 0px 5px 5px 0px #656565;
+		box-shadow: 0px 5px 5px 0px #656565;
 	}
 	.mobile-icon {
 		display: none;
 	}
 	#sommaire {
-		position: relative;
-		display: block;
-		padding: 0.5em 0em 0.5em 0em;
-	}
-	.logo-falc {
-		display: none;
+		background: #fff;
+		padding-bottom: 15px;
 	}
 	#sommaire a {
-		display: block;
+		display: inline-block;
+		color: #000;
+		padding: 3px;
+	}
+	#sommaireheader {
+		background: #336;
+	}
+	#sommaireheader .logo-falc {
+		max-width: 100px;
+		max-height: 68px;
+	}
+	#sommaireheader a {
+		display: inline;
+		position: absolute;
+		top: 30px;
+		left: 110px;
 		color: #fff;
-		text-decoration: none;
-		padding: 0.2em;
-		max-width: 499px;
-		border: 2px #333366 solid;
+		font-weight: bolder;
+		font-size: 1.4em;
 	}
 	#sommairefixe li {
-		margin-top: 0.4em;
+		margin-top: 6px;
 		display: inline-table;
-		width: 48%;
+		vertical-align: middle;
+		width: 45%;
+		margin-right: 2%;
+		border: 2px #fff solid;
 	}
 	#sommaire a:hover {
+		text-decoration: none;
+	}
+	#sommaire li:hover {
 		/* lien de menu entouré au survol de la souris */
 		
-		display: block;
-		border: 2px #fff solid;
+		display: inline-block;
+		text-decoration: none;
+		border: 2px #336 solid;
 		/* Position et style des articles */
 	}
 	article {
 		padding: 2em;
 		margin-bottom: 1em;
+		background: #fff;
+		-moz-box-shadow: 0px 5px 5px 0px #656565;
+		-webkit-box-shadow: 0px 5px 5px 0px #656565;
+		-o-box-shadow: 0px 5px 5px 0px #656565;
+		box-shadow: 0px 5px 5px 0px #656565;
 	}
 	.nav-article {
 		display: block;
 		position: relative;
 		top: 0em;
-		padding: 0.5em 0.1em 0.5em 0.3em;
+		padding: 0.5em 0.1em 0.5em 0em;
 	}
 	.nav-article a {
 		display: inline-block;
-		color: #f00;
-		padding: 0.3em 0.7em 0.3em 0em;
+		color: #666;
+		padding: 0.3em 0.4em 0.3em 0em;
 	}
 	.h2-image {
 		display: inline-block;
@@ -718,13 +720,17 @@
 		font-size: 1.7em;
 		padding: 0.5em 0em 0.5em 0em;
 	}
+	article h4 {
+		font-size: 1.4em;
+		padding: 0.3em 0em 0.3em 0em;
+	}
+	article h5 {
+		font-size: 1.2em;
+		padding: 0.2em 0em 0.2em 0em;
+	}
 	.nav-article + p,
 	.nav-article + dl {
 		display: block;
-		border-left: #efefef 15px solid;
-		font-weight: bolder;
-		padding: 1em 0em 1em 1em;
-		margin: 1em 0em 1em 0em;
 	}
 	article p {
 		font-size: 1.3em;
@@ -740,7 +746,6 @@
 	}
 	article dt {
 		display: inline;
-		font-weight: bold;
 		font-size: 1.4em;
 		line-height: 1.5em;
 	}
@@ -755,12 +760,12 @@
 	article .internet {
 		display: inline-block;
 		width: 99%;
-		background: #efefef;
 		color: #666;
 	}
 	.image-p {
-		margin: 1em 1em 0 0;
+		margin: 0;
 		top: 1em;
+		max-width: 50%;
 	}
 	.right {
 		float: right;
@@ -782,8 +787,6 @@
 	}
 	footer {
 		border-top: 40px #F00 solid;
-		padding: 0.2em 1em 0.2em 1em;
-		text-align: center;
 		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
 	}
 	#mentions-credits {
@@ -814,12 +817,12 @@
 		position: relative;
 		height: 100px;
 		margin: auto;
-		border-top : 2px solid #F00;
+		border-top: 2px solid #F00;
 		-moz-box-shadow: 0px 5px 5px 0px #656565;
 		-webkit-box-shadow: 0px 5px 5px 0px #656565;
 		-o-box-shadow: 0px 5px 5px 0px #656565;
 		box-shadow: 0px 5px 5px 0px #656565;
-		background:#fff
+		background: #fff
 	}
 	header > a {
 		display: block;
@@ -838,7 +841,6 @@
 		position: relative;
 		font-weight: bold;
 		padding: 20px 10px 10px 24px;
-
 	}
 	header #sous-titre {
 		font-size: 1.2rem;
@@ -850,39 +852,36 @@
 	/* Barre d'outils et d'accès cachée pour le moment */
 	
 	#outils {
-		display: inline-block;
+		display: inline;
 		position: absolute;
 		background: #F00;
 		color: #FFF;
 		height: 18px;
-		width: 120px;
+		width: 140px;
 		top: 0;
 		right: 10%;
 	}
-	#outils a {
+	#outils a,
+	#outils span {
 		color: #FFF;
-		font-size: 10px;
+		font-size: 12px;
 		line-height: 12px;
-		margin-left: 0.5em;
+		margin-left: 6px;
 	}
-.nav-icon {display:none}
-
-
+	.nav-icon {
+		display: none
+	}
 	/* Position et style de la partie page principale */
 	
 	#page {
 		border-top: 1px #F00 solid;
-		
-		
-		
-		
 		margin-bottom: 0;
 	}
 	/* Position et style de la partie menu flottant gauche */
 	
 	nav {
 		display: block;
-		background: #333366;
+		background: #336;
 		float: left;
 		position: relative;
 		padding: 0px 10px 0px 20px;
@@ -891,60 +890,66 @@
 	.mobile-icon {
 		display: none;
 	}
-	.logo-falc {
-		display: inline-block;
-		float: left;
-		max-width: 125px;
-		max-height: 85px;
-	}
-	.logo-falc + a {
-		position: relative;
-		display: inline-block;
-		top: 10px;
-		margin-left: 125px;
-		font-weight: bolder;
-	}
-	#sommaire li {
-		clear: both
-	}
 	#sommaire {
 		position: relative;
+		background: #fff;
 		display: block;
 		left: 0.5em;
 		top: 1em;
 		bottom: 1em;
 		padding: 0.5em;
 	}
+	#sommaire li {
+		clear: both
+	}
 	#sommaire a {
 		display: block;
-		color: #fff;
+		color: #000;
 		text-decoration: none;
 		font-size: 1em;
 		line-height: 1.1em;
-		padding: 0em 1em 0em 1em;
-		border: 2px #333366 solid;
+		padding: 0 4px 0 4px;
 	}
-	#sommaire .lien-sommaire {
-		font-size: 1.2em;
+	#sommaireheader {
+		background: #336;
+	}
+	#sommaireheader a {
+		color: #fff;
+		padding-top: 32px;
+		font-weight: bolder;
+		height: 53px;
+		font-size: 1.4em;
+	}
+	#sommaireheader a span {
+		vertical-align: middle;
+	}
+	#sommaireheader .logo-falc {
+		display: inline-block;
+		float: left;
+		max-width: 125px;
+		max-height: 85px;
 	}
 	#sommairefixe ol {
 		clear: both;
 		border-top: solid 1px #f00;
 	}
 	#sommairefixe li {
-		margin-top: 0.4em;
+		margin: 6px 0 6px 0;
+		border: 1px solid #fff;
 	}
-	#sommaire a:hover {
+	#sommaire li:hover {
 		/* lien de menu entouré au survol de la souris */
 		
 		display: block;
-		border: 2px #fff solid;
+		border: 1px solid #A1A1A1;
+		background: #C8C8C8;
 	}
 	#sommaire li .active {
 		/* lien de menu entouré quand article à l'écran */
 		
 		display: block;
-		border: 2px #fff solid;
+		border: 1px solid #A1A1A1;
+		background: #C8C8C8;
 	}
 	/* Position et style de la partie main de contenu principal */
 	
@@ -964,18 +969,18 @@
 		position: relative;
 		border: 1px solid #cecece;
 		margin-bottom: 30px;
-		background:#fff
+		background: #fff
 	}
 	.nav-article {
 		display: block;
 		overflow: visible;
 		z-index: 1;
-		padding: 0.5em 0.1em 0.5em 0.3em;
+		padding: 3px 10px 3px 0px;
 	}
 	.nav-article a {
 		display: inline-block;
 		color: #666;
-		padding: 0.3em 1em 0.3em 0em;
+		padding: 3px 10px 3px 0px;
 	}
 	.nav-article .lien-sommaire {
 		display: none;
@@ -983,11 +988,19 @@
 	article h2 {
 		display: block;
 		font-size: 2.5em;
-		padding: 0em 1em 0.6em 0.3em;
+		padding: 0 0 12px 0;
 	}
 	article h3 {
 		font-size: 1.8em;
 		padding: 0.5em 0em 0.5em 0em;
+	}
+	article h4 {
+		font-size: 1.5em;
+		padding: 0.3em 0em 0.3em 0em;
+	}
+	article h5 {
+		font-size: 1.3em;
+		padding: 0.2em 0em 0.2em 0em;
 	}
 	.h2-image {
 		display: block;
@@ -998,9 +1011,7 @@
 	.nav-article + p,
 	.nav-article + dl {
 		display: block;
-		font-weight: bolder;
 		padding: 10px 0 10px 0;
-
 	}
 	article p {
 		font-size: 1.4em;
@@ -1016,7 +1027,6 @@
 	}
 	article dt {
 		display: inline;
-		font-weight: bold;
 		font-size: 1.4em;
 		line-height: 1.5em;
 	}
@@ -1031,7 +1041,6 @@
 	article .internet {
 		display: inline-block;
 		width: 99%;
-		background: #efefef;
 		padding: 6px 6px 6px 6px;
 		color: #666;
 	}
@@ -1059,8 +1068,6 @@
 	}
 	footer {
 		border-top: 40px #F00 solid;
-		padding: 0.2em 1em 0.2em 1em;
-		text-align: center;
 		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
 	}
 	.clear {
