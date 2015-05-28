@@ -1,8 +1,0 @@
-<html>
-<body>
-<h1>Hello Coucou</h1>
-<p> Welcome </p>
-<!--#echo var="DATE_LOCAL" --> 
-<!--#include file="ssi_test.html" -->
-</body>
-</html>

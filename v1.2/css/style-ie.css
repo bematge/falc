@@ -1,0 +1,465 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+/* remember to define focus styles! */
+
+:focus {
+	outline: 1;
+}
+/* remember to highlight inserts somehow! */
+
+ins {
+	text-decoration: none;
+}
+
+del {
+	text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	font-family: 'Arial', 'Sans-serif';
+	display: block;
+	min-width: 240px;
+	max-width: 100%;
+	background: #C8C8C8;
+}
+
+a,
+a:link {
+	color: #F00;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline
+}
+
+a:visited {
+	color: #551A8B;
+}
+
+.css-hide {
+	display: none
+}
+
+.nav-icon input {
+	visibility: hidden;
+}
+
+header {
+	position: relative;
+	height: 100px;
+	margin: auto;
+	border-top: 2px solid #F00;
+	-moz-box-shadow: 0px 5px 5px 0px #656565;
+	-webkit-box-shadow: 0px 5px 5px 0px #656565;
+	-o-box-shadow: 0px 5px 5px 0px #656565;
+	box-shadow: 0px 5px 5px 0px #656565;
+	background: #fff
+}
+
+header > a {
+	display: block;
+	background: url('../img/theme/logo.png') no-repeat;
+	float: left;
+	position: relative;
+	margin-left: 20px;
+	float: left;
+	width: 212px;
+	height: 93px;
+	width: 25%;
+}
+
+header > h1 {
+	display: inline-block;
+	font-size: 1.8em;
+	position: relative;
+	font-weight: bold;
+	padding: 20px 10px 10px 24px;
+}
+
+header #sous-titre {
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+header #numero {
+	font-size: 1.2rem;
+}
+/* Barre d'outils et d'accès cachée pour le moment */
+
+#outils {
+	display: inline;
+	position: absolute;
+	background: #F00;
+	color: #FFF;
+	height: 18px;
+	width: 140px;
+	top: 0;
+	right: 10%;
+}
+
+#outils a,
+#outils span {
+	color: #FFF;
+	font-size: 12px;
+	line-height: 12px;
+	margin-left: 6px;
+}
+
+.nav-icon {
+	display: none
+}
+/* Position et style de la partie page principale */
+
+#page {
+	border-top: 1px #F00 solid;
+	margin-bottom: 0;
+}
+/* Position et style de la partie menu flottant gauche */
+
+nav {
+	display: block;
+	background: #336;
+	float: left;
+	position: relative;
+	padding: 0px 10px 0px 20px;
+	width: 25%;
+}
+
+.mobile-icon {
+	display: none;
+}
+
+#sommaire {
+	position: relative;
+	background: #fff;
+	display: block;
+	left: 0.5em;
+	top: 1em;
+	bottom: 1em;
+	padding: 0.5em;
+}
+
+#sommaire li {
+	clear: both
+}
+
+#sommaire a {
+	display: block;
+	color: #000;
+	text-decoration: none;
+	font-size: 1em;
+	line-height: 1.1em;
+	padding: 0 4px 0 4px;
+}
+
+#sommaireheader {
+	background: #336;
+}
+
+#sommaireheader a {
+	color: #fff;
+	padding-top: 42px;
+	font-weight: bolder;
+	height: 58px;
+	font-size: 1.4em;
+}
+
+#sommaireheader a span {
+	vertical-align: middle;
+}
+
+#sommaireheader .logo-falc {
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+#sommairefixe ol {
+	clear: both;
+	border-top: solid 1px #f00;
+}
+
+#sommairefixe li {
+	margin: 6px 0 6px 0;
+	border: 1px solid #fff;
+}
+
+#sommaire li:hover {
+	/* lien de menu entouré au survol de la souris */
+	
+	display: block;
+	border: 1px solid #A1A1A1;
+	background: #C8C8C8;
+}
+
+#sommaire li .active {
+	/* lien de menu entouré quand article à l'écran */
+	
+	display: block;
+	border: 1px solid #A1A1A1;
+	background: #C8C8C8;
+}
+/* Position et style de la partie main de contenu principal */
+
+main {
+	display: block;
+	width: 70%;
+	float: right;
+	padding: 0px 20px 0px 10px;
+}
+/* Position et style des articles */
+
+section {
+	margin-top: 1em;
+}
+
+article {
+	padding: 2em;
+	position: relative;
+	border: 1px solid #cecece;
+	margin-bottom: 30px;
+	background: #fff
+}
+
+.nav-article {
+	display: block;
+	overflow: visible;
+	z-index: 1;
+	padding: 3px 10px 3px 0px;
+}
+
+.nav-article a {
+	display: inline-block;
+	color: #666;
+	padding: 3px 10px 3px 0px;
+}
+
+.nav-article .lien-sommaire {
+	display: none;
+}
+
+article h2 {
+	display: block;
+	font-size: 2.5em;
+	padding: 0 0 12px 0;
+}
+
+article h3 {
+	font-size: 1.8em;
+	padding: 0.5em 0em 0.5em 0em;
+}
+
+article h4 {
+	font-size: 1.5em;
+	padding: 0.3em 0em 0.3em 0em;
+}
+
+article h5 {
+	font-size: 1.3em;
+	padding: 0.2em 0em 0.2em 0em;
+}
+
+.h2-image {
+	display: block;
+	max-width: 100%;
+	width: auto;
+	height: auto;
+}
+
+.nav-article + p,
+.nav-article + dl {
+	display: block;
+	padding: 10px 0 10px 0;
+}
+
+article p {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	padding: 0.4em 0em 0.4em 0em;
+}
+
+article li {
+	font-size: 1.4em;
+	line-height: 1.5em;
+	margin-left: 2.5em;
+	padding-left: 1em;
+	list-style: disc;
+}
+
+article dt {
+	display: inline;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+article dd {
+	display: inline;
+	font-size: 1.4em;
+	line-height: 1.5em;
+}
+
+article dd li {
+	font-size: 1.4rem;
+}
+
+article .internet {
+	display: inline-block;
+	width: 99%;
+	padding: 6px 6px 6px 6px;
+	color: #666;
+}
+
+.image-p {
+	margin: 1em 1em 0 0;
+	top: 1em;
+}
+
+.right {
+	float: right;
+	margin-left: 3em;
+}
+
+.left {
+	float: left;
+	margin-right: 3em;
+}
+
+.apropos {
+	display: inline-block;
+	color: #666;
+	width: 80%;
+	margin-top: 1em;
+	border-top: #666 1px solid;
+}
+
+.apropos p {
+	font-size: 1rem
+}
+
+footer {
+	border-top: 40px #F00 solid;
+	/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+}
+
+.clear {
+	clear: both;
+}
+
+#mentions-credits {
+	display: block;
+}
+
+#mentions-credits div {
+	display: inline;
+	margin-right: 2em;
+}
+
+.mentions p,
+.mentions a {
+	display: none;
+}
+
+.credits p {
+	display: none
+}
+
+.contact p {
+	display: none
+}
