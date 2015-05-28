@@ -3,11 +3,7 @@
 
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width">
-	<meta name="description" content="Le site facile-a-lire.iledefrance.fr propose une transcription du magazine Île-de-France conçue par et pour des personnes en situation de handicap mental">
 
-	<link rel="shortcut icon" href="http://www.iledefrance.fr/sites/all/themes/francilien/favicon.ico" type="image/vnd.microsoft.icon" />
-	<link href="css/style.css" rel='stylesheet' type='text/css' media='screen'>
 	<link href="css/print.css" rel='stylesheet' type='text/css' media='print'>
 	<!--[if lt IE 9]>
 	<link rel="stylesheet" type="text/css" media="all" href="css/style-ie.css" />
@@ -20,23 +16,6 @@
 <body>
 	<div id="mobilemenuwraper">
 		<header id="couverture">
-			<div id="outils">
-				<a href="#sommaire">Sommaire</a>
-				<a href="#articles">Contenus</a>
-				<!-- <span>Contraste</span><a href="#articles">normal</a><a href="#articles">inversé</a>
-			<div class="nav-icon">
-				<label for="contraste">contraste</label>
-				<input id="contraste" type="checkbox" onChange="changeCSS('css/contrast.css', 2);" /> 
-			</div> -->
-
-			</div>
-
-			<a title="Le Magazine de la région Île-de-France, Accueil" href="#">
-				<div class="logo-idf">
-					<span class="css-hide">Le Magazine de la région Île-de-France, Accueil</span>
-				</div>
-			</a>
-
 			<h1 class="titre">Facile à lire et à comprendre<br/><span id="sous-titre">Le magazine de la Région Île-de-France 
 			</span><span id="numero">n°56</span></h1>
 
@@ -44,8 +23,6 @@
 	</div>
 	<div id="page">
 		<nav id="sommaire">
-			<label class="mobile-icon" for="mobile-deploy">Menu</label>
-			<input id="mobile-deploy" class="mobile-icon" type="checkbox">
 			<div id="sommairefixe">
 				<div id="sommaireheader">
 					<img alt="Label Facile à lire et a comprendre" width="100" height="100" src="img/theme/logo-falc-100.gif" class="logo-falc">
@@ -114,14 +91,13 @@
 		<main id="contenu">
 
 			<section id="articles" class="articles">
-				<h2 class="css-hide">Articles faciles à lire et à comprendre</h2>
 
 				<article id="0" class="article">
 					<h2>Présentation de la Région Ile-de-France </h2>
 					<img alt="" src="img/articles/0-carte-idf_h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(0);">Imprimer cet article facile à lire</a>
+
 						<a href="#1" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
 					<p>La Région Ile-de-France c’est Paris et les 7 départements tout autour. </p>
@@ -182,8 +158,8 @@
 					<img alt="" src="img/articles/1-parcs-naturels-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.04-05-Promenons-nous_dans_les_parcs.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Promenez-vous dans les parcs naturels. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(1);">Imprimer cet article facile à lire</a>
+
+
 						<a href="#2" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
 					<dl>
@@ -247,8 +223,8 @@
 
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.06-Le_vin_prend_l_eau.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Le vin est transporté sur l'eau. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(2);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#3" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -274,8 +250,8 @@
 					<img alt="" src="img/articles/3-mureaux-manille-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.07-Mureaux-Manille_50000euros.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Des Mureaux à Manille. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(3);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#4" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -302,8 +278,8 @@
 					<img alt="" src="img/articles/4-50000-euros-h2.jpg" class="h2-image">
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.07-Mureaux-Manille_50000euros.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original 50 000 euros pourl'imrimerie de Dammartin-en-Goële. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(4);">Imprimer cet article facile à lire</a>
+
+
 						<a href="#5" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
 					<dl>
@@ -330,8 +306,8 @@
 					<img alt="" src="img/articles/5-en-piste-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.08-En_piste_pour_les_Jeux.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original En piste pour les Jeux olympiques. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(5);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#6" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -356,8 +332,8 @@
 					<img alt="" src="img/articles/6-laicite-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.09-Laicite_programme.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original La laïcité dans les lycées. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(6);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#7" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -387,8 +363,8 @@
 					<img alt="" src="img/articles/7-ecrire-falc-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.10-11-Facile_a_lire.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Ecrire facile à lire, ce n'est pas si simple. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(7);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#8a" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -476,8 +452,8 @@
 					<img alt="" src="img/articles/8a-interview-apprentissage-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.14-18-Dossier_apprentissage.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Apprentissage : l'opinion de Julie Noguez. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle('8a');">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#8b" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -521,8 +497,8 @@
 					<img alt="" src="img/articles/8b-coup-blues-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.14-18-Dossier_apprentissage.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Apprentissage : les solutions de la Région. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle('8b');">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#8c" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -563,8 +539,8 @@
 					<img alt="" src="img/articles/8c-bons-plans-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.14-18-Dossier_apprentissage.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Apprentissage : des bonnes adresses pour vous. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle('8c');">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#8d" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -604,8 +580,8 @@
 					<img alt="" src="img/articles/8d-interview-kribi-romdhane-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.23-Hella_Kribi.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Apprentissage : Si chaque entreprise embauche au moins un apprenti. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle('8d');">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#9" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -648,8 +624,8 @@
 					<img alt="" src="img/articles/9-velorution-h2.jpg" class="h2-image" />
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.28-31-Velorution.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original >De plus en plus de vélos. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(9);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#10" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -717,8 +693,8 @@
 					<img alt="" src="img/articles/10-gatinais-h2.jpg" class="h2-image">
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.34-35-le_gatinais.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original . Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(10);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#11" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -807,8 +783,8 @@
 					<img alt="" src="img/articles/11-cresson-h2.jpg" class="h2-image">
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
-						<a href="originaux/IDF-56-p.37-Le_cresson.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original Le cresson. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(11);">Imprimer cet article facile à lire</a>
+
+
 
 						<a href="#12" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 					</div>
@@ -894,8 +870,8 @@
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
 
-						<a href="originaux/IDF-56-p.39-Region_capitale.pdf" class="lien-proch-article" target="_blank" title="Télécharger l'article original La capitale de la planète. Nouvelle fenêtre">Télécharger l'article original</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(12);">Imprimer cet article facile à lire</a>
+
+
 						<a href="#13" class="lien-proch-article" target="_blank">Aller au prochain article</a>
 
 
@@ -939,7 +915,7 @@
 					<div class="nav-article">
 						<a href="#couverture" class="lien-sommaire">Revenir au sommaire</a>
 						<a href="" class="lien-proch-article" target="_blank" title="Télécharger les tribunes originales. Nouvelle fenêtre">Télécharger les tribunes originales</a>
-						<a href="#" class="lien-proch-article" onclick="printArticle(13);">Imprimer cet article facile à lire</a>
+
 					</div>
 
 
@@ -1160,13 +1136,10 @@
 					<p>Conception, développement et intégration : Bertrand Matge, Région Île-de-France </p>
 					<h3>Accessibilité</h3>
 					<p>La déclaration de conformité RGAA 3.0 sera publiée prochainement</p>
-					<p>Ce site dispose d'une feuille de style dédiée à l'impression</p>
-					<p>Vous pouvez télécharger ce numéro <a href="originaux/Region_Ile_de_France_56-Faceile_a_lire.epub">en version ePub </a>
-					</p>
 					<p>le code HTML5 et CSS3 sont valides (<a href="https://validator.w3.org/">Validation W3C</a>)
 					</p>
 					<p>Si malgré notre vigilance vous rencontriez le moindre problème d'accessibilité sur ce site, n'hésitez pas à nous écrire à redaction@iledefrance.fr</p>
-
+					<p>Ce site dispose d'une feuille de style dédiée à l'impression</p>
 
 
 

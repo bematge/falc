@@ -12,6 +12,11 @@
 		max-width: 100%;
 		background: #C8C8C8;
 	}
+	::-moz-selection,
+	::selection {
+		color: #fff;
+		background: #000;
+	}
 	a,
 	a:link {
 		color: #F00;
