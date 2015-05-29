@@ -1,0 +1,178 @@
+@page {
+	margin: 2cm
+}
+
+@page first {
+	margin-top: 5cm;
+}
+
+@page left {
+	margin-left: 5cm;
+	margin-right: 23cm;
+}
+
+@page right {
+	margin-left: 3cm;
+	margin-right: 5cm;
+}
+
+.css-hide {
+	display: none
+}
+/*.nav-article {
+    display: none
+}*/
+
+.apropos a {
+	display: none;
+}
+
+#outils {
+	display: none
+}
+
+#sommaire label,
+#sommaire input {
+	display: none
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+	color: #000;
+	text-decoration: none
+}
+
+article h2,
+footer {
+	page-break-before: always;
+}
+
+article p a[href]:after {
+	content: " (lien : " attr(href) " )";
+}
+
+.contact a:after {
+	content: " : contact@région"
+}
+
+header {
+	border: 5px #336 solid;
+}
+
+header h1 {
+	font-size: 3.5em;
+	color: #336;
+	width: 70%;
+	padding-left: 1cm;
+	font-weight: bold;
+}
+
+header .logo-idf {
+	display: block;
+	margin-left: 1cm;
+	width: 212px;
+	height: 93px;
+	background: url('../img/logo.png') no-repeat;
+}
+
+.logo-falc {
+	display: block;
+	float: right;
+	position: relative;
+	top: -10.6cm;
+}
+
+#sommaire {
+	margin-top: 3cm;
+	font-size: 1.5em;
+	line-height: 1.7em;
+}
+
+article h2 {
+	margin-top: 1cm;
+	display: block;
+	background: url('../img/logo-falc-60.gif') no-repeat bottom right;
+	border-bottom: 1px solid #336;
+	font-size: 1.8em;
+	padding: 2cm 0cm 0.4cm 0cm;
+	margin-bottom: 1cm;
+	padding-right: 56px;
+}
+
+article h2 + p {
+	margin-top: 3cm;
+}
+
+article h3 {
+	font-size: 1.4em;
+	padding-top: 1cm;
+}
+
+article p {
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+article li {
+	font-size: 1.3em;
+	line-height: 1.4em;
+	margin-left: 2.5em;
+	padding-left: 1em;
+	list-style: disc;
+}
+
+article dt {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+article dd {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 1.3em;
+	line-height: 1.4em;
+}
+
+article dd li {
+	font-size: 1.3rem;
+}
+
+article .internet {
+	display: block;
+	border: 1px solid #efefef;
+	color: #666;
+}
+
+.imageh2 {
+	margin: 1em 1em 0 0;
+	top: 1em;
+}
+
+.right {
+	float: right;
+	margin-left: 3em;
+}
+
+.left {
+	float: left;
+	margin-right: 3em;
+}
+
+.apropos {
+	display: inline-block;
+	width: 80%;
+	margin-top: 1cm;
+	font-size: 12px;
+	font-style: italic
+}
+
+#mentions-credits span {
+	font-size: 1.3em;
+	font-weight: bold;
+}

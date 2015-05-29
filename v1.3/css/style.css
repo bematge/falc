@@ -1,0 +1,1017 @@
+@import url('reset.css');
+/* import du CSS de remise à zéro des marges */
+
+@media screen
+/* Règles générales */
+
+{
+	body {
+		font-family: 'Arial', 'Sans-serif';
+		display: block;
+		min-width: 240px;
+		max-width: 100%;
+		background: #C8C8C8;
+	}
+	::-moz-selection,
+	::selection {
+		color: #fff;
+		background: #000;
+	}
+	a,
+	a:link {
+		color: #F00;
+		text-decoration: none
+	}
+	a:hover {
+		text-decoration: underline
+	}
+	a:visited {
+		color: #551A8B;
+	}
+	.css-hide {
+		display: none
+	}
+	.nav-icon input {
+		visibility: hidden;
+	}
+}
+
+@media screen and (max-width: 420px)
+/* Règles petit smartphone - pas d'image */
+
+{
+	header {
+		display: block;
+		position: relative;
+		height: 65px;
+		background: #fff;
+	}
+	header > a {
+		background: url('../img/theme/logo-sq.png') no-repeat;
+		position: relative;
+		margin-left: 20px;
+		float: left;
+		width: 70px;
+		height: 65px;
+	}
+	header > h1 {
+		display: block;
+		width: 90%;
+		position: relative;
+		font-size: 0.8rem;
+		font-weight: bold;
+		padding: 12px 0 0 0;
+	}
+	header #sous-titre {
+		font-size: 0.6rem;
+		font-weight: bold;
+	}
+	header #numero {
+		font-size: 0.6rem;
+	}
+	/* Barre d'outils et d'accès */
+	
+	#outils {
+		display: none;
+	}
+	/* Position et style de la partie page principale */
+	
+	#page {
+		border-top: 1px #F00 solid;
+		margin-bottom: 0;
+	}
+	/* Position et style de la partie menu flottant gauche */
+	
+	nav {
+		display: block;
+		background: #333366;
+		position: relative;
+		width: 100%;
+	}
+	#sommaire {
+		position: relative;
+		padding: 0em 0em 0em 0em;
+	}
+	#sommaire input {
+		display: none
+	}
+	#sommaire label {
+		font-size: 0;
+	}
+	.mobile-icon {
+		display: block;
+		position: absolute;
+		border: 0;
+		background: url('../img/theme/nav.png');
+		height: 48px;
+		width: 48px;
+		cursor: pointer;
+		top: -60px;
+		right: 10px;
+	}
+	.mobile-icon:checked {
+		background: url('../img/theme/nav.png');
+	}
+	.mobile-icon + div {
+		display: none;
+	}
+	.mobile-icon:checked + div {
+		display: block;
+		position: relative;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	nav input:checked {}
+	.logo-falc {
+		display: none;
+	}
+	#sommaire a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: 0.2em;
+		max-width: 499px;
+		border: 2px #333366 solid;
+	}
+	#sommairefixe li {
+		margin-top: 0.4em;
+		display: inline-table;
+		width: 48%;
+	}
+	#sommaire a:hover {
+		/* lien de menu entouré au survol de la souris */
+		
+		display: block;
+		border: 2px #fff solid;
+	}
+	/* Position et style des articles */
+	
+	article {
+		padding: 1em;
+		margin-bottom: 1em;
+		background: #fff;
+	}
+	.nav-article {
+		display: block;
+		position: relative;
+		top: 0em;
+		padding: 0.5em 0.3em 0.5em 0em;
+	}
+	.nav-article a {
+		display: inline-block;
+		font-size: 0.8rem;
+		color: #666;
+		padding: 0.3em 0.7em 0.3em 0em;
+	}
+	.h2-image {
+		display: none;
+	}
+	article h2 {
+		display: block;
+		background: url('../img/theme/logo-falc-60.gif') no-repeat bottom right #336;
+		color: #fff;
+		font-size: 1.5em;
+		padding: 20px 0em 20px 10px;
+		padding-right: 56px;
+		border: #336 1px solid;
+	}
+	article h3 {
+		font-size: 1.4em;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	.nav-article + p,
+	.nav-article + dl {
+		display: block;
+		margin: 1em 0em 1em 0em;
+	}
+	article p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		padding: 0.4em 0em 0.4em 0em;
+	}
+	article li {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		margin-left: 2.5em;
+		padding-left: 1em;
+		list-style: disc;
+	}
+	article dt {
+		display: inline;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+	article dd {
+		display: inline;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+	article dd li {
+		font-size: 1.1em;
+	}
+	article .internet {
+		display: inline-block;
+		color: #666;
+	}
+	.image-p {
+		display: none;
+	}
+	.right {
+		float: right;
+		margin-left: 3em;
+	}
+	.left {
+		float: left;
+		margin-right: 3em;
+	}
+	.apropos {
+		display: inline-block;
+		color: #666;
+		width: 100%;
+		margin-top: 1em;
+		border-top: #666 1px solid;
+	}
+	.apropos p {
+		margin-left: 0.5em;
+		font-size: 1rem
+	}
+	footer {
+		border-top: 40px #F00 solid;
+		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+	}
+	#mentions-credits {
+		display: block;
+	}
+	#mentions-credits div {
+		display: inline;
+		margin-right: 2em;
+	}
+	.mentions p,
+	.mentions a {
+		display: none;
+	}
+	.credits p {
+		display: none
+	}
+	.contact p {
+		display: none
+	}
+}
+
+@media screen and (min-width: 421px) and (max-width: 640px)
+/* Règles smartphone */
+
+{
+	header {
+		display: block;
+		position: relative;
+		height: 65px;
+		background: #fff;
+	}
+	header > a {
+		background: url('../img/theme/logo-sq.png') no-repeat;
+		position: relative;
+		margin-left: 20px;
+		float: left;
+		width: 70px;
+		height: 65px;
+	}
+	header > h1 {
+		display: block;
+		font-size: 1.2em;
+		position: relative;
+		font-weight: bold;
+		padding: 12px 0 0 0;
+	}
+	header #sous-titre {
+		font-size: 0.8rem;
+		font-weight: bold;
+	}
+	header #numero {
+		font-size: 0.8rem;
+	}
+	/* Barre d'outils et d'accès */
+	
+	#outils {
+		display: none;
+	}
+	/* Position et style de la partie page principale */
+	
+	#page {
+		border-top: 1px #F00 solid;
+		margin-bottom: 0;
+	}
+	/* Position et style de la partie menu flottant gauche */
+	
+	nav {
+		display: block;
+		background: #333366;
+		position: relative;
+		width: 100%;
+	}
+	#sommaire {
+		position: relative;
+		padding: 0em 0em 0em 0em;
+	}
+	#sommaire input {
+		display: none
+	}
+	#sommaire label {
+		font-size: 0;
+	}
+	.mobile-icon {
+		display: block;
+		position: absolute;
+		border: 0;
+		background: url('../img/theme/nav.png');
+		height: 48px;
+		width: 48px;
+		cursor: pointer;
+		top: -60px;
+		right: 10px;
+	}
+	.mobile-icon:checked {
+		background: url('../img/theme/nav.png');
+	}
+	.mobile-icon + div {
+		display: none;
+	}
+	.mobile-icon:checked + div {
+		display: block;
+		position: relative;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	nav input:checked {}
+	.logo-falc {
+		display: none;
+	}
+	#sommaire a {
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		padding: 0.2em;
+		max-width: 499px;
+		border: 2px #333366 solid;
+	}
+	#sommairefixe li {
+		margin-top: 0.4em;
+		display: inline-table;
+		width: 48%;
+	}
+	#sommaire a:hover {
+		/* lien de menu entouré au survol de la souris */
+		
+		display: block;
+		border: 2px #fff solid;
+	}
+	/* Position et style des articles */
+	
+	article {
+		padding: 2em;
+		margin-bottom: 1em;
+		background: #fff;
+	}
+	.nav-article {
+		display: block;
+		position: relative;
+		top: 0em;
+		padding: 0.5em 0.3em 0.5em 0em;
+	}
+	.nav-article a {
+		display: inline-block;
+		color: #666;
+		padding: 0.3em 0.7em 0.3em 0em;
+	}
+	.h2-image {
+		display: inline-block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	article h2 {
+		display: block;
+		background: url('../img/theme/logo-falc-60.gif') no-repeat bottom right #336;
+		color: #fff;
+		font-size: 1.5em;
+		padding: 20px 0em 20px 10px;
+		padding-right: 56px;
+		border: #336 1px solid;
+	}
+	article h3 {
+		font-size: 1.4em;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	.nav-article + p,
+	.nav-article + dl {
+		display: block;
+		margin: 1em 0em 1em 0em;
+	}
+	article p {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		padding: 0.4em 0em 0.4em 0em;
+	}
+	article li {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		margin-left: 2.5em;
+		padding-left: 1em;
+		list-style: disc;
+	}
+	article dt {
+		display: inline;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+	article dd {
+		display: inline;
+		font-size: 1.1em;
+		line-height: 1.5em;
+	}
+	article dd li {
+		font-size: 1.1em;
+	}
+	article .internet {
+		display: inline-block;
+		color: #666;
+	}
+	.image-p {
+		margin: 1em 1em 0 0;
+		top: 1em;
+		max-width: 50%;
+		width: auto;
+		height: auto;
+	}
+	.right {
+		float: right;
+		margin-left: 3em;
+	}
+	.left {
+		float: left;
+		margin-right: 3em;
+	}
+	.apropos {
+		display: inline-block;
+		color: #666;
+		width: 100%;
+		margin-top: 1em;
+		border-top: #666 1px solid;
+	}
+	.apropos p {
+		margin-left: 0.5em;
+		font-size: 1rem
+	}
+	footer {
+		border-top: 40px #F00 solid;
+		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+	}
+	#mentions-credits {
+		display: block;
+	}
+	#mentions-credits div {
+		display: inline;
+		margin-right: 2em;
+	}
+	.mentions p,
+	.mentions a {
+		display: none;
+	}
+	.credits p {
+		display: none
+	}
+	.contact p {
+		display: none
+	}
+}
+
+@media screen and (min-width: 641px) and (max-width: 960px)
+/* Règles tablette */
+
+{
+	header {
+		position: relative;
+		height: 70px;
+		margin: auto;
+		border-top: 2px solid #F00;
+		background: #fff
+	}
+	header > a {
+		background: url('../img/theme/logo-med.png') no-repeat;
+		position: relative;
+		margin-left: 20px;
+		float: left;
+		width: 160px;
+		height: 70px;
+		width: 25%;
+	}
+	header > h1 {
+		font-size: 1.3em;
+		position: relative;
+		font-weight: bold;
+		padding: 15px 10px 10px 24px;
+	}
+	header #sous-titre {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	header #numero {
+		font-size: 1.1rem;
+	}
+	/* Barre d'outils et d'accès */
+	
+	#outils {
+		display: inline;
+		position: absolute;
+		background: #F00;
+		color: #FFF;
+		height: 18px;
+		width: 140px;
+		top: 0;
+		right: 5%;
+	}
+	#outils a,
+	#outils span {
+		color: #FFF;
+		font-size: 12px;
+		margin-left: 6px;
+		line-height: 12px;
+	}
+	.nav-icon {
+		display: none
+	}
+	/* Position et style de la partie page principale */
+	
+	#page {
+		border-top: 1px #F00 solid;
+		margin-bottom: 0;
+	}
+	/* Position et style de la partie menu flottant gauche */
+	
+	nav {
+		display: block;
+		background: #333366;
+		position: relative;
+		width: 100%;
+		margin-bottom: 10px;
+		-moz-box-shadow: 0px 5px 5px 0px #656565;
+		-webkit-box-shadow: 0px 5px 5px 0px #656565;
+		-o-box-shadow: 0px 5px 5px 0px #656565;
+		box-shadow: 0px 5px 5px 0px #656565;
+	}
+	.mobile-icon {
+		display: none;
+	}
+	#sommaire {
+		background: #fff;
+		padding-bottom: 15px;
+	}
+	#sommaire a {
+		display: inline-block;
+		color: #000;
+		padding: 3px;
+	}
+	#sommaireheader {
+		background: #336;
+	}
+	#sommaireheader .logo-falc {
+		max-width: 100px;
+		max-height: 68px;
+	}
+	#sommaireheader a {
+		display: inline;
+		position: absolute;
+		top: 30px;
+		left: 110px;
+		color: #fff;
+		font-weight: bolder;
+		font-size: 1.4em;
+	}
+	#sommairefixe li {
+		margin-top: 6px;
+		display: inline-table;
+		vertical-align: middle;
+		width: 45%;
+		margin-right: 2%;
+		border: 2px #fff solid;
+	}
+	#sommaire a:hover {
+		text-decoration: none;
+	}
+	#sommaire li:hover {
+		/* lien de menu entouré au survol de la souris */
+		
+		display: inline-block;
+		text-decoration: none;
+		border: 2px #336 solid;
+		/* Position et style des articles */
+	}
+	article {
+		padding: 2em;
+		margin-bottom: 1em;
+		background: #fff;
+		-moz-box-shadow: 0px 5px 5px 0px #656565;
+		-webkit-box-shadow: 0px 5px 5px 0px #656565;
+		-o-box-shadow: 0px 5px 5px 0px #656565;
+		box-shadow: 0px 5px 5px 0px #656565;
+	}
+	.nav-article {
+		display: block;
+		position: relative;
+		top: 0em;
+		padding: 0.5em 0.1em 0.5em 0em;
+	}
+	.nav-article a {
+		display: inline-block;
+		color: #666;
+		padding: 0.3em 0.4em 0.3em 0em;
+	}
+	.h2-image {
+		display: inline-block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	article h2 {
+		display: block;
+		background: url('../img/theme/logo-falc-60.gif') no-repeat center right #336;
+		color: #fff;
+		max-width: 672px;
+		font-size: 2em;
+		padding: 20px 0em 20px 10px;
+		padding-right: 56px;
+		border: #336 1px solid;
+	}
+	article h3 {
+		font-size: 1.7em;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	article h4 {
+		font-size: 1.4em;
+		padding: 0.3em 0em 0.3em 0em;
+	}
+	article h5 {
+		font-size: 1.2em;
+		padding: 0.2em 0em 0.2em 0em;
+	}
+	.nav-article + p,
+	.nav-article + dl {
+		display: block;
+	}
+	article p {
+		font-size: 1.3em;
+		line-height: 1.5em;
+		padding: 0.4em 0em 0.4em 0em;
+	}
+	article li {
+		font-size: 1.3em;
+		line-height: 1.5em;
+		margin-left: 2.5em;
+		padding-left: 1em;
+		list-style: disc;
+	}
+	article dt {
+		display: inline;
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+	article dd {
+		display: inline;
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+	article dd li {
+		font-size: 1.4rem;
+	}
+	article .internet {
+		display: inline-block;
+		width: 99%;
+		color: #666;
+	}
+	.image-p {
+		margin: 0;
+		top: 1em;
+		max-width: 50%;
+	}
+	.right {
+		float: right;
+		margin-left: 3em;
+	}
+	.left {
+		float: left;
+		margin-right: 3em;
+	}
+	.apropos {
+		display: inline-block;
+		color: #666;
+		width: 80%;
+		margin-top: 1em;
+		border-top: #666 1px solid;
+	}
+	.apropos p {
+		font-size: 1rem;
+	}
+	footer {
+		border-top: 40px #F00 solid;
+		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+	}
+	#mentions-credits {
+		display: block;
+	}
+	#mentions-credits div {
+		display: inline;
+		margin-right: 2em;
+	}
+	.mentions p {
+		display: none;
+	}
+	.credits p {
+		display: none
+	}
+	.contact p {
+		display: none
+	}
+}
+
+@media screen and (min-width: 961px)
+/* Règles affichage web */
+
+{
+	/* Position et style de la partie header */
+	
+	header {
+		position: relative;
+		height: 100px;
+		border-top: 2px solid #F00;
+		-moz-box-shadow: 0px 5px 5px 0px #656565;
+		-webkit-box-shadow: 0px 5px 5px 0px #656565;
+		-o-box-shadow: 0px 5px 5px 0px #656565;
+		box-shadow: 0px 5px 5px 0px #656565;
+		background: #fff
+	}
+	header > a {
+		display: block;
+		background: url('../img/theme/logo.png') no-repeat;
+		float: left;
+		position: relative;
+		margin-left: 20px;
+		height: 93px;
+		width: 31%;
+	}
+	header > h1 {
+		display: inline-block;
+		font-size: 1.8em;
+		position: relative;
+		font-weight: bold;
+		padding: 20px 10px 10px 14px;
+	}
+	header #sous-titre {
+		font-size: 1.2rem;
+		font-weight: bold;
+	}
+	header #numero {
+		font-size: 1.2rem;
+	}
+	/* Barre d'outils et d'accès cachée pour le moment */
+	
+	#outils {
+		display: inline;
+		position: absolute;
+		background: #F00;
+		color: #FFF;
+		height: 18px;
+		width: 140px;
+		top: 0;
+		right: 10%;
+	}
+	#outils a,
+	#outils span {
+		color: #FFF;
+		font-size: 12px;
+		line-height: 12px;
+		margin-left: 6px;
+	}
+	.nav-icon {
+		display: none
+	}
+	/* Position et style de la partie page principale */
+	
+	#page {
+		border-top: 1px #F00 solid;
+		margin-bottom: 0;
+	}
+	/* Position et style de la partie menu flottant gauche */
+	
+	nav {
+		display: block;
+		background: #336;
+		float: left;
+		position: relative;
+		padding: 0px 10px 0px 20px;
+		width: 30%;
+	}
+	.mobile-icon {
+		display: none;
+	}
+	#sommaire {
+		position: relative;
+		background: #fff;
+		display: block;
+		left: 0.5em;
+		top: 1em;
+		bottom: 1em;
+		padding: 0.5em;
+	}
+	#sommaire li {
+		clear: both
+	}
+	#sommaire a {
+		display: block;
+		color: #000;
+		text-decoration: none;
+		font-size: 1em;
+		line-height: 1.1em;
+		padding: 0 4px 0 4px;
+	}
+	#sommaireheader {
+		background: #336;
+	}
+	#sommaireheader a {
+		color: #fff;
+		padding-top: 42px;
+		font-weight: bolder;
+		height: 58px;
+		font-size: 1.4em;
+	}
+	#sommaireheader a span {
+		vertical-align: middle;
+	}
+	#sommaireheader .logo-falc {
+		float: left;
+		width: 100px;
+		height: 100px;
+	}
+	#sommairefixe ol {
+		clear: both;
+		border-top: solid 1px #f00;
+	}
+	#sommairefixe li {
+		margin: 6px 0 6px 0;
+		border: 1px solid #fff;
+	}
+	#sommaire li:hover {
+		/* lien de menu entouré au survol de la souris */
+		
+		display: block;
+		border: 1px solid #A1A1A1;
+		background: #C8C8C8;
+	}
+	#sommaire li .active {
+		/* lien de menu entouré quand article à l'écran */
+		
+		display: block;
+		border: 1px solid #A1A1A1;
+		background: #C8C8C8;
+	}
+	/* Position et style de la partie main de contenu principal */
+	
+	main {
+		display: block;
+		width: 65%;
+		float: right;
+		padding: 0px 20px 0px 10px;
+	}
+	/* Position et style des articles */
+	
+	section {
+		margin-top: 1em;
+	}
+	article {
+		padding: 2em;
+		position: relative;
+		border: 1px solid #cecece;
+		margin-bottom: 30px;
+		background: #fff
+	}
+	.nav-article {
+		display: block;
+		overflow: visible;
+		z-index: 1;
+		padding: 3px 10px 3px 0px;
+	}
+	.nav-article a {
+		display: inline-block;
+		color: #666;
+		padding: 3px 10px 3px 0px;
+	}
+	.nav-article .lien-sommaire {
+		display: none;
+	}
+	article h2 {
+		display: block;
+		font-size: 2.5em;
+		padding: 0 0 12px 0;
+	}
+	article h3 {
+		font-size: 1.8em;
+		padding: 0.5em 0em 0.5em 0em;
+	}
+	article h4 {
+		font-size: 1.5em;
+		padding: 0.3em 0em 0.3em 0em;
+	}
+	article h5 {
+		font-size: 1.3em;
+		padding: 0.2em 0em 0.2em 0em;
+	}
+	.h2-image {
+		display: block;
+		max-width: 100%;
+		width: auto;
+		height: auto;
+	}
+	.nav-article + p,
+	.nav-article + dl {
+		display: block;
+		padding: 10px 0 10px 0;
+	}
+	article p {
+		font-size: 1.4em;
+		line-height: 1.5em;
+		padding: 0.4em 0em 0.4em 0em;
+	}
+	article li {
+		font-size: 1.4em;
+		line-height: 1.5em;
+		margin-left: 2.5em;
+		padding-left: 1em;
+		list-style: disc;
+	}
+	article dt {
+		display: inline;
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+	article dd {
+		display: inline;
+		font-size: 1.4em;
+		line-height: 1.5em;
+	}
+	article dd li {
+		font-size: 1.4rem;
+	}
+	article .internet {
+		display: inline-block;
+		width: 99%;
+		padding: 6px 6px 6px 0px;
+		color: #666;
+	}
+	.image-p {
+		margin: 1em 1em 0 0;
+		top: 1em;
+	}
+	.right {
+		float: right;
+		margin-left: 3em;
+	}
+	.left {
+		float: left;
+		margin-right: 3em;
+	}
+	.apropos {
+		display: inline-block;
+		color: #666;
+		width: 80%;
+		margin-top: 1em;
+		border-top: #666 1px solid;
+	}
+	.apropos p {
+		font-size: 1rem
+	}
+	footer {
+		border-top: 40px #F00 solid;
+		/* clear sur le footer pour qu'il se mette en bas de main et non en bas de nav */
+	}
+	footer > article {
+		font-size: 0.7em;
+		line-height: 0.8em;
+	}
+	.clear {
+		clear: both;
+	}
+	#mentions-credits {
+		display: block;
+	}
+	#mentions-credits div {
+		display: inline;
+		margin-right: 2em;
+	}
+	.mentions p,
+	.mentions a {
+		display: none;
+	}
+	.credits p {
+		display: none
+	}
+	.contact p {
+		display: none
+	}
+}
